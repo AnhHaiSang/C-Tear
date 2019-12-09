@@ -14,17 +14,17 @@ class CartContainer extends Component {
         return result;
     }
     render() {
-        // console.log(this.props.cartItems);
+
         let {cartItems} = this.props;
         return (
             <CartDetail>
-                <div class="main" style={{ marginLeft: '17%', marginRight: '17%' }}>
+                <div className="main" style={{ marginLeft: '17%', marginRight: '17%' }}>
                     <h2>GIỎ HÀNG</h2>
                     <div style={{ height: '50 px' }}>
-                        <img src="../Image Rudu/titleleft-dark.png" />
+                        <img src="../Image_Rudu/titleleft-dark.png" alt="giohang" />
                     </div>
-                    <table class="table cart" border={1}>
-                        <thead class="thead-light">
+                    <table className="table cart" border={1}>
+                        <thead className="thead-light">
                             <tr>
                                 <th scope="col">ẢNH</th>
                                 <th scope="col">TÊN SẢN PHẨM</th>
@@ -39,9 +39,9 @@ class CartContainer extends Component {
                         </tbody>
                     </table>
                     <div style={{ float: 'right' }}>
-                        <button class="btn btn-dark">Tiếp tục mua hàng</button>
-                        <button class="btn btn-dark">Xóa</button>
-                        <button class="btn btn-dark">Cập nhật</button>
+                        <button className="btn btn-dark">Tiếp tục mua hàng</button>
+                        <button className="btn btn-dark">Xóa</button>
+                        <button className="btn btn-dark">Cập nhật</button>
                     </div>
                 </div>
             </CartDetail>

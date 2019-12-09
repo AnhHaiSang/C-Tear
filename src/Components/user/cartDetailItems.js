@@ -6,7 +6,9 @@ export default class CartDetailItems extends Component {
         let {img,name,price,soluong} = this.props.cartItems.product
         return (
             <tr>
-                <th scope="row"><img src={img} className='img-fuilt'/></th>
+                <th scope="row">
+                    <img src={img} className='img-fuilt' alt=""/>
+                </th>
                 <td>{name}</td>
                 <td>{price}</td>
                 <td>

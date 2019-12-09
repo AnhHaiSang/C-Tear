@@ -5,6 +5,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  position: relative;
 }
 
 .h1, h1 {
@@ -17,8 +18,20 @@ body {
 }
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
+
+a {
+  color: black ;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.menu_items {
+  color: white;
+  margin-left: 25px;
+}
+
 .header {
   text-align: center;
 }
@@ -35,16 +48,22 @@ img.slide_items {
 .clr{
   clear: both;
 }
-.background_product{
+.background_product {
   background-image: url(./Image_Rudu/wine-1.jpg);
   background-repeat: no-repeat;
   width: 80%;
+  height: 550px;
   margin: 0 auto;
+  position: relative !important;
 }
 .card {
   width: 70%;
   margin: 0 auto;
   display: block !important;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  background: #efef;
 }
 .img_card {
   width: 50%;
@@ -60,11 +79,18 @@ img.img_pro1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 760px;
   margin: auto;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
   text-align: center;
   font-family: arial;
 }
+.product_lists {
+  width: 80%;
+  margin: 20px auto;
+}
 .LineNewProduct {
   text-align: center;
+  margin-top: 12%;
 }
 .lists_item1 {
   width: 70%;
@@ -83,28 +109,55 @@ ul.d-flex.flex-wrap {
 }
 li.list-group-item {
   width: 19%;
+  background-color: #fefe;
+  padding: 1.7%;
   text-align: center;
   border-radius: 5px;
   margin: 2px 2px;
 }
 img.img_items {
   width: 90%;
-  height: 180.38px;
+  height: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 760px;
   margin: auto;
   text-align: center;
   font-family: arial;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
 }
 .content_items {
-  margin-top: 15px;
+  margin-top: 35px;
   line-height: 20px;
+  height: 165px;
 }
 .ImageProduct {
-  width: 100%; 
+  width: 100%;
+  
+  position: relative;
 }
 img.Image {
   width: 25%;
+  height: 200px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.img-fuilt{
+  width: 90%;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;  
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  top: 101%;
+  border-top: 1px solid #fefe;
+  background-color: #efefef;
 }
 
 footer.foooter_content {
@@ -112,6 +165,7 @@ footer.foooter_content {
   margin: 0% auto;
   display: flex!important;
   flex-wrap: wrap!important;
+  margin-top: 35px;
 }
 .lists_footer {
   width: 20%;
@@ -136,6 +190,7 @@ span.input-group-text {
 }
 .review{
   list-style-type: none;
+  padding: 0;
 }
 
 

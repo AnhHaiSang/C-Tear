@@ -1,6 +1,7 @@
 import * as Types from '../../Constants/user/ActionTypes';
 var data = JSON.parse(localStorage.getItem('CART'));
 const CartReducerInitialState = data ? data : [];
+
 const CartReducer = (state = CartReducerInitialState, action) => {
     let {product,total} = action
     var index = -1;
@@ -15,7 +16,9 @@ const CartReducer = (state = CartReducerInitialState, action) => {
                         total
                     });
                 }
-            localStorage.setItem('Cart',JSON.stringify(state));
+                // console.log(localStorage.getItem('CART'));
+                
+            localStorage.setItem('CART',JSON.stringify(state));
             return [...state]
         default:
             return state

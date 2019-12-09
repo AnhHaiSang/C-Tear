@@ -9,7 +9,6 @@ class HomePage extends React.Component {
             <div className="home_page">
                 <Header />
                 {this.props.children}
-               
                 <Footer />
             </div>
         )

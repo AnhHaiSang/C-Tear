@@ -3,8 +3,8 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import logo from './../img/Image_Rudu/logo.png';
 
-import logo from './../img/Image_Rudu/logo.png'
 const menu =   [
     {
         name: "Home Page",
@@ -17,9 +17,9 @@ const menu =   [
         to:"/products",
     },
     {
-        name: "zxc",
+        name: "About",
         exact: false,
-        to:"/465",
+        to:"/about",
     }
 ]
 
@@ -32,7 +32,7 @@ const MenuLink = ({label,to,activeOnlyWhenExact}) =>{
             var active = match ? 'active' : '';
             return (
               <li className={active}>
-                <Link to={to}>
+                <Link className="menu_items" to={to}>
                   {label}
                 </Link>
               </li>

@@ -19,16 +19,17 @@ class ListsProduct extends React.Component {
                             <p>{products.name}</p>
                             <h4>
                                 <ul className="review">
-                                    <li>
+                                    <li className="star">
                                         {this.showReview(products.review)}
                                     </li>
                                 </ul>
                             </h4>
-                            <p className="price">{products.price}</p>
-                            <p>
-                                <Link to="/giohang" onClick={()=>this.addcart(products,total)} type="button" className="btn btn-primary">Add to Cart</Link>
-                            </p>
-                        </div>
+                            <p className="price">${products.price}</p>
+                            </div>
+                            <div className="button_items">
+                                <button onClick={()=>this.addcart(products,total)} type="button" className="btn btn-primary">Add to Cart</button>
+                            </div>
+                        
                         <div className="clr"></div>
                     </Link>
                 </div>
@@ -38,6 +39,8 @@ class ListsProduct extends React.Component {
     }
     addcart = (product,total) => {
         this.props.addtocart(product,total);
+        // console.log(this.props.addtocart(product,total));
+        
     }
     showReview(review) {
         var result = [];

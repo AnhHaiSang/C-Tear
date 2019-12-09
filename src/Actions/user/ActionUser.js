@@ -7,3 +7,11 @@ export const AddToCart = (product, total) =>{
         total
     }
 } 
+
+export const DauCong = (product, total) => {
+    return{
+        type: Types.UPDATE_PRODUCT_IN_CART,
+        product,
+        total
+    }
+}
