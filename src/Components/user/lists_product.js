@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 
 class ListsProduct extends React.Component {
     render() {
-        var { products } = this.props;
-        // console.log(this.props);
-        let total;
+        var { products} = this.props;
+        // console.log(products);
         return (
             <div className="items1">
                 <div className="card_items">
@@ -25,23 +24,22 @@ class ListsProduct extends React.Component {
                                 </ul>
                             </h4>
                             <p className="price">${products.price}</p>
-                            </div>
-                            <div className="button_items">
-                                <button onClick={()=>this.addcart(products,total)} type="button" className="btn btn-primary">Add to Cart</button>
-                            </div>
-                        
+                        </div>
+                        <div className="button_items">
+                            <button onClick={() => this.onAddToCart(products)} type="button" className="btn btn-primary">Add to Cart</button>
+                        </div>
+
                         <div className="clr"></div>
                     </Link>
                 </div>
             </div>
-
-        )
+ 
+        ) 
+    }  
+    onAddToCart = (product) => {   
+        this.props.onAddToCart(product);
     }
-    addcart = (product,total) => {
-        this.props.addtocart(product,total);
-        // console.log(this.props.addtocart(product,total));
-        
-    }
+    
     showReview(review) {
         var result = [];
         for (var i = 1; i <= review; i++) {
