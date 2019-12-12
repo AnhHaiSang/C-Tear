@@ -12,14 +12,14 @@ class ImageProduct extends React.Component {
     render() {
         return (
             <div className="ImageProduct">
-                <img className="Image Deco1" src={imgdemo1}  alt="Image Deco1" />
-                <img className="Image Deco2" src={imgdemo2}  alt="Image Deco2" />
-                <img className="Image Deco3" src={imgdemo3}  alt="Image Deco3" />
-                <img className="Image Deco4" src={imgdemo4}  alt="Image Deco4" />
-                <img className="Image Deco5" src={imgdemo5}  alt="Image Deco5" />
-                <img className="Image Deco6" src={imgdemo6}  alt="Image Deco6" />
-                <img className="Image Deco7" src={imgdemo7}  alt="Image Deco7" />
-                <img className="Image Deco8" src={imgdemo8}  alt="Image Deco8" />
+                <img className="Image Deco1"  src={imgdemo1}  alt="Deco1" />
+                <img className="Image Deco2"  src={imgdemo2}  alt="Deco2" />
+                <img className="Image Deco3"  src={imgdemo3}  alt="Deco3" />
+                <img className="Image Deco4"  src={imgdemo4}  alt="Deco4" />
+                <img className="Image Deco5"  src={imgdemo5}  alt="Deco5" />
+                <img className="Image Deco6"  src={imgdemo6}  alt="Deco6" />
+                <img className="Image Deco7"  src={imgdemo7}  alt="Deco7" />
+                <img className="Image Deco8"  src={imgdemo8}  alt="Deco8" />
             </div>
         )
     }

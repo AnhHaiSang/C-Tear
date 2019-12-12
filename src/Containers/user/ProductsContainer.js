@@ -3,6 +3,7 @@ import ListsProduct from '../../Components/user/lists_product';
 import ProductLists from '../../Components/user/product_lists';
 import { connect } from 'react-redux';
 import * as action from '../../Actions/user/ActionUser';
+import PropTypes from 'prop-types';
 
 // container trung gian giữa redux và conponents, container sẽ lấy data ở store
 // container thực hiện nhiệm vụ kết nối (vd mapStateToProps)
@@ -11,30 +12,50 @@ import * as action from '../../Actions/user/ActionUser';
 
 class ProductsContainer extends React.Component {
     render() {
-        var {products} = this.props; // console.log(products);
+        var { products } = this.props; // console.log(products);
         return (
             <div>
-                {/* conponent danh sách sản phẩm */}
+                {/* conponent danh sách sản phẩm */} 
                 <ProductLists>
-                {this.showProducts(products)}
-               </ProductLists>
+                    {this.showProducts(products)}
+                </ProductLists>
             </div>
         )
     }
-     // hàm này dùng để hiển thị danh sách sản phầm ở homepage
-     showProducts(products) {
-         let {addtocart} =this.props;
-         
+    // hàm này dùng để hiển thị danh sách sản phầm ở homepage
+    showProducts(products) {
+        let { onAddToCart } = this.props;
         var result = null;
-        if(products.length > 0 ){
+        if (products.length > 0) {
             result = products.map((products, index) => {
-                return  <li key={index} className="list-group-item">
-                            <ListsProduct key={index} products={products} addtocart={addtocart}/>
-                        </li>;
+                return <li key={index} className="list-group-item">
+                    <ListsProduct 
+                    key={index} 
+                    products={products} 
+                    onAddToCart={onAddToCart} />
+                </li>;
+
             });
         }
         return result;
     }
+}
+
+
+//check object trong products (cai state in ProductReducer)
+ProductsContainer.propTypes = {
+    products: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            img: PropTypes.string.isRequired,
+            price: PropTypes.number.isRequired,
+            inventory: PropTypes.number.isRequired,
+            review: PropTypes.number.isRequired,
+            description: PropTypes.string.isRequired,
+            CategorieId: PropTypes.number.isRequired 
+
+        })
+    ).isRequired
 }
 
 const mapStateToProps = state => {
@@ -44,8 +65,8 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        addtocart: (product,total) => {
-            dispatch(action.AddToCart(product,total))
+        onAddToCart: (product) => {
+            dispatch(action.actAddToCart(product, 1))
         }
     }
 }

@@ -6,6 +6,7 @@ import Content from '../Components/user/content';
 // import Products from '../Components/user/Products';
 import ProductsContainer from '../Containers/user/ProductsContainer';
 import CartContainer from '../Containers/user/CartContainer';
+// import Footer from '../Components/user/footer';
 
 export default class componentName extends Component {
     render() {
@@ -28,7 +29,7 @@ export default class componentName extends Component {
                         >
                         </AppRouter>
                         <AppRouter
-                            path="/products"
+                            path="/productlist"
                             layout={HomePage}
                             exact
                             component={ProductsContainer}
