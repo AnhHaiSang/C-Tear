@@ -8,11 +8,6 @@ body {
   position: relative;
 }
 
-.h1, h1 {
-  font-size: 30px;
-  text-align: center !important;
-  margin-top: 100px;
-}
 .h4, h4 {
   font-size: 20px;
 }
@@ -25,10 +20,6 @@ a {
   color: black ;
   text-decoration: none;
   background-color: transparent;
-}
-button, input {
-  overflow: visible;
-  text-align: center;
 }
 
 a.menu_items {
@@ -143,8 +134,7 @@ img.img_items {
 img.Image {
   width: 25%;
   height: 200px;
-  border: 0.0125px solid rgba(0,0,0,.125);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0,0,0,.125);
 }
 .img-fuilt{
   width: 90%;
@@ -163,7 +153,6 @@ img.Image {
   top: 101%;
   border-top: 1px solid #fefe;
   background-color: #efefef;
-  
 }
 
 footer.foooter_content {
@@ -199,48 +188,6 @@ span.input-group-text {
   padding: 0;
 }
 
-.cart.detail {
-  width: 100%;
-  margin-top: 30px;
-}
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  color: #212529;
-  background: #efef;
-}
-tr {
-  text-align: center;
-  border: 1px solid rgba(0,0,0,.125);
-}
-.table td, .table th {
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-  width: 29%;
-}
-td.td_quantity {
-  display: flex;
-  border: none;
-  width: 130px;
-}
-button.btn.btn-info.minus {
-  width: 100%;
-  padding: 0 14px;
-}
-button.btn.btn-info.push {
-  width: 100%;
-}
-input.w3-input.w3-border {
-  width: 38px;
-}
-.content_cart {
-  width: 65%;
-  margin: 0 auto;
-}
-.button_action {
-  float: right;
-}
 
     
 

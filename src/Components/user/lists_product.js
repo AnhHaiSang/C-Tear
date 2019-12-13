@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 class ListsProduct extends React.Component {
     render() {
-        var { products} = this.props;
-        // console.log(products);
+        var { products } = this.props;
+        // console.log(products.id);
+        // let total;
         return (
             <div className="items1">
                 <div className="card_items">
@@ -22,23 +23,30 @@ class ListsProduct extends React.Component {
                                         {this.showReview(products.review)}
                                     </li>
                                 </ul>
-                            </h4>
+                            </h4>     
                             <p className="price">${products.price}</p>
-                        </div>
-                        <div className="button_items">
-                            <button onClick={() => this.onAddToCart(products)} type="button" className="btn btn-primary">Add to Cart</button>
-                        </div>
-
+                            </div>
+                            <div className="button_items">
+                                {/* <button onClick={()=>this.getDetail(products)} type="button" className="btn btn-primary">Add to Cart</button> */}
+                                <p>
+                                <Link to={`/ProductDetail/${products.id}`}>Xem thêm</Link>
+                                </p>
+                            </div>
+                        
                         <div className="clr"></div>
                     </Link>
                 </div>
             </div>
- 
-        ) 
-    }  
-    onAddToCart = (product) => {   
-        this.props.onAddToCart(product);
+
+        )
     }
+    addcart = (product,total) => {
+        this.props.addtocart(product,total);
+    };
+    getDetail = (product) => {
+        this.props.getproductdetail(product);
+    }
+    
     
     showReview(review) {
         var result = [];

@@ -26,301 +26,310 @@
       "inventory": 69,
       "review": 4,
       "description": "",
-      "quantity": 2,
-      "CategorieId": 1
+      "loaispId": 1
     },
     {
       "id": 2,
       "name": "RƯỢU VANG 60 SESSANTANNI LIMITED EDITION",
-      "price": "$165",
+      "img": "../Product/product1.jpg",
+      "price": 165,
       "inventory": 34,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 3,
       "name": "RƯỢU VANG 62 ANNIVERSARIO",
-      "price": "$165",
+      "img": "../Product/product1.jpg",
+      "price": 165,
       "inventory": 51,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 4,
       "name": "RƯỢU VANG ANIMA DI NEGROAMARO",
-      "price": "$185",
+      "img": "../Product/product1.jpg",
+      "price": 185,
       "inventory": 50,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 5,
       "name": "RƯỢU VANG F LIMITED",
-      "price": "$300",
+      "img": "../Product/product1.jpg",
+      "price": 300,
       "inventory": 45,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 6,
       "name": "RƯỢU VANG F NEGROAMARO SAN MARZANO",
-      "price": "$450",
+      "img": "../Product/product1.jpg",
+      "price": 450,
       "inventory": 15,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 7,
       "name": "RƯỢU VANG M LIMITED EDITION MERLOT SALENTO",
-      "price": "$500",
+      "img": "../Product/product1.jpg",
+      "price": 500,
       "inventory": 23,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 8,
       "name": "RƯỢU VANG M MALVASIA NERA",
-      "price": "$500",
+      "img": "../Product/product1.jpg",
+      "price": 500,
       "inventory": 24,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 9,
       "name": "RƯỢU VANG TALO NEGROAMARO",
-      "price": "$750",
+      "img": "../Product/product1.jpg",
+      "price": 750,
       "inventory": 14,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 10,
       "name": "RƯỢU VANG IL PUMO NEGROAMARO 100 YEARS",
-      "price": "$1000",
+      "img": "../Product/product1.jpg",
+      "price": 100,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 11,
       "name": "VANG TRẮNG MỸ SUTTER HOME SAUVIGNON BLANC ",
-      "price": "$300",
+      "img": "../Product/product1.jpg",
+      "price": 300,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 12,
       "name": "RƯỢU VANG PHÁP DOMAINE FAIVELEY MEURSAULT",
-      "price": "$500",
+      "img": "../Product/product1.jpg",
+      "price": 500,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 13,
       "name": "RƯỢU VANG DOMAINE FAIVELEY CORTON-CHARLEMAGNE GRAND CRU",
-      "price": "$550",
+      "img": "../Product/product1.jpg",
+      "price": 550,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 14,
       "name": "RƯỢU VANG PHÁP DOMAINE FAIVELEY BOURGOGNE",
-      "price": "$560",
+      "img": "../Product/product1.jpg",
+      "price": 560,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 15,
       "name": "RƯỢU VANG TRẮNG PHÁP YVON MAU COLOMBARD",
-      "price": "$600",
+      "img": "../Product/product1.jpg",
+      "price": 600,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 16,
       "name": "RƯỢU VANG PAULLORRY CHARDONNAY",
-      "price": "$620",
+      "img": "../Product/product1.jpg",
+      "price": 620,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 17,
       "name": "RƯỢU VANG CASAS DEL TOQUI SINGLE ESTATE SAUVIGNON BLANC",
-      "price": "$700",
+      "img": "../Product/product1.jpg",
+      "price": 700,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 18,
       "name": "RƯỢU VANG CASAS DEL TOQUI RESERVA CHARDONNAY",
-      "price": "$800",
+      "img": "../Product/product1.jpg",
+      "price": 800,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 19,
       "name": "RƯỢU VANG TRẮNG CHILE OCHAGAVIA SILVESTRE SAUVIGNON BLANC",
-      "price": "$920",
+      "img": "../Product/product1.jpg",
+      "price": 920,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 20,
       "name": "RƯỢU VANG MUSSEL BAY SAUVIGNON BLANC MARLBOROUGH",
-      "price": "$1000",
+      "img": "../Product/product1.jpg",
+      "price": 100,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 21,
       "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “PREMIERE CUVEE”",
-      "price": "$200",
+      "img": "../Product/product1.jpg",
+      "price": 200,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 22,
       "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “RESERVE PRIVEE”",
-      "price": "$210",
+      "img": "../Product/product1.jpg",
+      "price": 210,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 23,
       "name": "RƯỢU CHAMPAGNE BRUT ASSEMBLAGE",
-      "price": "$250",
+      "img": "../Product/product1.jpg",
+      "price": 250,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 24,
       "name": "RƯỢU CHAMPAGNE BRUNO PAILLARD BRUT “BLANC DE BLANC”",
-      "price": "$250",
+      "img": "../Product/product1.jpg",
+      "price": 250,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 25,
       "name": "RƯỢU CHAMPAGNE MOET & CHANDON – ICE IMPERIAL",
-      "price": "$500",
+      "img": "../Product/product1.jpg",
+      "price": 500,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 26,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT CUVVE RENE",
-      "price": "$800",
+      "img": "../Product/product1.jpg",
+      "price": 800,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 27,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT L’AUTHENTIQUE",
-      "price": "$800",
+      "img": "../Product/product1.jpg",
+      "price": 800,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 28,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT ORIGINE",
-      "price": "$900",
+      "img": "../Product/product1.jpg",
+      "price": 900,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 29,
       "name": "RƯỢU CHAMPAGNE GOSSET BRUT EXCELLENCE",
-      "price": "$1000",
+      "img": "../Product/product1.jpg",
+      "price": 100,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 30,
       "name": "RƯỢU CHAMPAGNE DOM PERIGNON ROSE",
-      "price": "$1000",
+      "img": "../Product/product1.jpg",
+      "price": 100,
       "inventory": 10,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
+    },
+    {
+      "name": "ruoi j do",
+      "img": "anh j do",
+      "price": "gia tien j do",
+      "inventory": "con nhiu do",
+      "review": "may sao do",
+      "description": "noi dung j do",
+      "loaispId": "1",
+      "id": 31
     }
   ],
-  "Categories": [
+  "loaisp": [
     {
       "id": 1,
       "name": "wine red",

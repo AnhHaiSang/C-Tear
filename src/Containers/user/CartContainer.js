@@ -1,18 +1,34 @@
-import React, { Component } from 'react';
-import CartDetail from '../../Components/user/cartDetail';
-import CartDetailItems from '../../Components/user/cartDetailItems';
-import CartButton from '../../Components/user/CartButton';
-import { connect } from 'react-redux';
-import * as action from '../../Actions/user/ActionUser';
-// import * as Messages from '../../Constants/user/Messages';
+import React, { Component } from 'react'
+import CartDetail from '../../Components/user/cartDetail'
+import CartDetailItems from '../../Components/user/cartDetailItems'
+import {connect} from 'react-redux';
+import { GetApiCatgories } from '../../Actions/user/ActionUser';
 
 class CartContainer extends Component {
+    componentDidMount(){
+        let {match} = this.props;
+        if(match) {
+            let id = match.params.id;
+            this.props.getCategories(id);
+        }
+    }
+    showCartIteams(cartItems) {
+        var result = null;
+        if(cartItems.length > 0 ){
+            result = cartItems.map((cartItems, index) => {
+                return  <CartDetailItems key={index} cartItems={cartItems} />  
+            });
+        }
+        return result;
+    }
     render() {
-        let { cartItems } = this.props;
-    //    console.log(cartItems);
+
+        let {cartItems} = this.props;
+        console.log(this.props);
+        
         return (
             <CartDetail>
-                <div className="content_cart">
+                <div className="main" style={{ marginLeft: '17%', marginRight: '17%' }}>
                     <h2>GIỎ HÀNG</h2>
                     <div style={{ height: '50 px' }}>
                         <img src="../Image_Rudu/titleleft-dark.png" alt="giohang" />
@@ -24,7 +40,7 @@ class CartContainer extends Component {
                                 <th scope="col">TÊN SẢN PHẨM</th>
                                 <th scope="col">GIÁ</th>
                                 <th scope="col" style={{ width: '100px' }}>SỐ LƯỢNG</th>
-                                <th scope="col">SỐ TIỀN</th>
+                                <th scope="col">Tổng số</th>
                                 <th scope="col">XÓA</th>
                             </tr>
                         </thead>
@@ -32,59 +48,29 @@ class CartContainer extends Component {
                             {this.showCartIteams(cartItems)}
                         </tbody>
                     </table>
-                    <CartButton />
+                    <div style={{ float: 'right' }}>
+                        <button className="btn btn-dark">Tiếp tục mua hàng</button>
+                        <button className="btn btn-dark">Xóa</button>
+                        <button className="btn btn-dark">Cập nhật</button>
+                    </div>
                 </div>
             </CartDetail>
         )
     }
-    showCartIteams(cartItems) {
-        var result = null;
-        var { onDeleteProductInCart, onUpdateProductInCart } = this.props;
-        
-        if (cartItems.length > 0) {
-            result = cartItems.map((cartItems, index) => {
-                return <CartDetailItems
-                    key={index}
-                    cartItems={cartItems}
-                    onDeleteProductInCart={onDeleteProductInCart}
-                    onUpdateProductInCart={onUpdateProductInCart}
-                />
-            });
-        }
-        return result;
-    }
-
-
-    showTotalAmout = (cartItems) => {
-
-        var result = null;
-        if (cartItems.length > 0) {
-            result = <CartDetailItems
-                cartItems={cartItems}
-            />
-        }
-        return result;
-    }
-
+    
 }
 const mapStateToProps = (state, ownProps) => {
     return {
-        cartItems: state.CartReducer
- 
-
+        cartItems: state
     }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-
-        onDeleteProductInCart: (product) => {
-            dispatch(action.DeleteProductInCart(product));
-        },
-        onUpdateProductInCart: (product, quantity) => {
-            dispatch(action.actUpdateProductInCart(product, quantity));
+        getCategories: (id) => {
+            dispatch(GetApiCatgories(id))
         }
-
     }
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartContainer)

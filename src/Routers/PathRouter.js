@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";      
 import AppRouter from '../Routers/AppRouter';
 import HomePage from '../Pages/user/home_page';
+import HomePageAdmin from '../Pages/admin/HomePageAdmin';
 import Content from '../Components/user/content';
 // import Products from '../Components/user/Products';
 import ProductsContainer from '../Containers/user/ProductsContainer';
 import CartContainer from '../Containers/user/CartContainer';
+import DetailContainer from '../Containers/user/detailContainer';
 // import Footer from '../Components/user/footer';
 
 export default class componentName extends Component {
@@ -16,7 +18,7 @@ export default class componentName extends Component {
                     <Switch>
                         <AppRouter
                             path="/admin"
-                            layout
+                            layout={HomePageAdmin}
                             exact
                             component
                         >
@@ -42,6 +44,12 @@ export default class componentName extends Component {
                             component={CartContainer}
                         >
                         </AppRouter>
+                        <AppRouter
+                            path="/productDetail/:id"
+                            layout={HomePage}
+                            exact
+                            component={DetailContainer}
+                        ></AppRouter>
                     </Switch>
                 </Router>
             </div>
