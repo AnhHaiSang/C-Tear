@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
 import productsReducer from './ProductReducer';
 import CartReducer from './CartReducer';
-// import Messages from './Messages';
+import CategoriesReducerAdmin from '../admin/CategoriesReducerAdmin';
 
 const appReducers = combineReducers({
     productsReducer,
     CartReducer,
-    // Messages
+    CategoriesReducerAdmin,
+    
 })
 export default appReducers;

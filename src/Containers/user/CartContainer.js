@@ -24,7 +24,7 @@ class CartContainer extends Component {
     render() {
 
         let {cartItems} = this.props;
-        console.log(this.props);
+        //console.log(this.props);
         
         return (
             <CartDetail>

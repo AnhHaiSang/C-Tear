@@ -1,0 +1,6 @@
+export const ADD_TO_SV = 'ADD_TO_SV';
+export const DELETE_PRODUCT_IN_SV = 'DELETE_PRODUCT_IN_SV';
+export const UPDATE_PRODUCT_IN_SV = 'UPDATE_PRODUCT_IN_SV';
+export const SHOWCATEGORIES = 'SHOWCATEGORIES';
+
+

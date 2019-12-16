@@ -21,9 +21,9 @@ class DetailContainer extends React.Component {
         var {products} = this.props;
         
         if(true){
-            console.log("abc");
+            //console.log("abc");
         }
-        console.log(this.props)
+        //console.log(this.props)
         return (
             <div>
     

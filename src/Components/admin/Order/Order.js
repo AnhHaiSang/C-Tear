@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ProductItem from '../ProductItem/ProductItem';
+import OrderItem from '../Order/OrderItem';
 import { Link } from 'react-router-dom';
 
-export default class ProductList extends Component {
+export default class Order extends Component {
     render() {
         return (
             
@@ -20,19 +20,19 @@ export default class ProductList extends Component {
                                 <thead>
                                     <tr>
                                         <th>STT</th>
-                                        <th>name </th>
-                                        <th>img </th>
-                                        <th>inventory</th>
-                                        <th>review</th>
-                                        <th>description</th>
-                                        <th>loaispId</th>
+                                        <th>id</th>
+                                        <th>userID </th>
+                                        <th>addess</th>
+                                        <th>status ship</th>
+                                        <th>created at</th>
+                                        <th>total price</th>
                                         <th>Hành Động</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <ProductItem />
-                                    <ProductItem />
-                                    <ProductItem />
+                                    <OrderItem />
+                                    <OrderItem />
+                                    <OrderItem />
                                 </tbody>
                             </table>
                         </div>

@@ -2,26 +2,70 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";      
 import AppRouter from '../Routers/AppRouter';
 import HomePage from '../Pages/user/home_page';
-import HomePageAdmin from '../Pages/admin/HomePageAdmin';
+import HomePageAdmin from '../Pages/admin/HomeAdmin/HomePageAdmin';
 import Content from '../Components/user/content';
-// import Products from '../Components/user/Products';
+import Error404 from '../Pages/admin/ErrorPage/Error404';
 import ProductsContainer from '../Containers/user/ProductsContainer';
 import CartContainer from '../Containers/user/CartContainer';
 import DetailContainer from '../Containers/user/detailContainer';
-// import Footer from '../Components/user/footer';
+import ProductList from '../Components/admin/ProductList/ProductList';
+import CatelogyActionPage from '../Pages/admin/CatelogyActionPage/CatelogyActionPage';
+import CategoriesContainer from '../Containers/admin/CategoriesContainer';
+import ChartAdmin from '../Components/admin/ChartAdmin/ChartAdmin';
+import AccoutUser from '../Components/admin/AccoutUser/AccoutUser';
+import Order from '../Components/admin/Order/Order';
+
+
 
 export default class componentName extends Component {
     render() {
         return (
-            <div>
+            
                 <Router>
                     <Switch>
                         <AppRouter
                             path="/admin"
                             layout={HomePageAdmin}
                             exact
-                            component
+                            component={ChartAdmin}
+                        >  
+                        </AppRouter>
+                        {/* chưa lam */}
+                        <AppRouter
+                            path="/admin/productlist" 
+                            layout={HomePageAdmin}
+                            exact
+                            component={ProductList}
                         >
+                        </AppRouter>
+                        
+                        <AppRouter
+                            path="/admin/categories"
+                            layout={HomePageAdmin}
+                            exact
+                            component={CategoriesContainer}
+                        >
+                        </AppRouter>
+                        <AppRouter
+                            path="/admin/categories/add"
+                            layout={HomePageAdmin}
+                            exact
+                            component={CatelogyActionPage}
+                        >
+                        </AppRouter>
+                        <AppRouter
+                            path="/admin/accout"
+                            layout={HomePageAdmin}
+                            exact
+                            component={AccoutUser}
+                        >  
+                        </AppRouter>
+                        <AppRouter
+                            path="/admin/bill"
+                            layout={HomePageAdmin}
+                            exact
+                            component={Order}
+                        >  
                         </AppRouter>
                         <AppRouter
                             path="/"
@@ -50,9 +94,15 @@ export default class componentName extends Component {
                             exact
                             component={DetailContainer}
                         ></AppRouter>
+                        <AppRouter
+                            path=""
+                            layout={Error404}
+                            exact
+                            component
+                        ></AppRouter>
                     </Switch>
                 </Router>
-            </div>
+            
         )
     }
 }

@@ -14,7 +14,8 @@
       "password": "123",
       "re-password": "123",
       "email": "email1",
-      "phone": "number"
+      "phone": "number",
+      "address": "123abc"
     }
   ],
   "products": [
@@ -317,16 +318,6 @@
       "review": 5,
       "description": "",
       "loaispId": 3
-    },
-    {
-      "name": "ruoi j do",
-      "img": "anh j do",
-      "price": "gia tien j do",
-      "inventory": "con nhiu do",
-      "review": "may sao do",
-      "description": "noi dung j do",
-      "loaispId": "1",
-      "id": 31
     }
   ],
   "loaisp": [
@@ -351,18 +342,10 @@
       "id": 1,
       "userID": "",
       "addess": "stress",
-      "status_ship": "",
-      "created_at": "",
-      "total_price": ""
+      "status ship": "",
+      "created at": "",
+      "total price": ""
     }
   ],
-  "order_details": [
-    {
-      "id": 1,
-      "productID": "",
-      "amount": "number",
-      "orderId": "",
-      "detail_price": ""
-    }
-  ]
+  "order_details": []
 }

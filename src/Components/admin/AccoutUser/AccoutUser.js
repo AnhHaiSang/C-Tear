@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import ProductItem from '../ProductItem/ProductItem';
-import { Link } from 'react-router-dom';
+import AccoutUserItem from '../AccoutUser/AccoutUserItem';
+// import { Link } from 'react-router-dom';
 
-export default class ProductList extends Component {
+export default class AccoutUser extends Component {
     render() {
         return (
             
                 <div className="col-sm-9 mt-10">
-                    <h3 style={{ textAlign: "center", marginBottom: "30px" }}>Manage Product</h3>
-                    <Link to="/admin/categories" type="button" className="btn btn-info mb-10">Add</Link>
+                    <h3 style={{ textAlign: "center", marginBottom: "30px" }}>Manage Accout User</h3>
                     <div className="panel panel-primary">
                         <div className="bg-primary text-white">
                             <h3 style={{ textAlign: "center", marginBottom: "0px" }}>
-                                Lists Product
+                                Lists Accout User
                             </h3>
                         </div>
                         <div className="panel-body">
@@ -20,19 +19,19 @@ export default class ProductList extends Component {
                                 <thead>
                                     <tr>
                                         <th>STT</th>
-                                        <th>name </th>
-                                        <th>img </th>
-                                        <th>inventory</th>
-                                        <th>review</th>
-                                        <th>description</th>
-                                        <th>loaispId</th>
-                                        <th>Hành Động</th>
+                                        <th>fisrt name </th>
+                                        <th>last name </th>
+                                        <th>password</th>
+                                        <th>re-password</th>
+                                        <th>email</th>
+                                        <th>phone</th>
+                                        <th>address</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <ProductItem />
-                                    <ProductItem />
-                                    <ProductItem />
+                                    <AccoutUserItem />
+                                    <AccoutUserItem />
+                                    <AccoutUserItem />
                                 </tbody>
                             </table>
                         </div>
