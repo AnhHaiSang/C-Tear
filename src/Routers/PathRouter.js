@@ -11,9 +11,11 @@ import DetailContainer from '../Containers/user/detailContainer';
 import ProductList from '../Components/admin/ProductList/ProductList';
 import CatelogyActionPage from '../Pages/admin/CatelogyActionPage/CatelogyActionPage';
 import CategoriesContainer from '../Containers/admin/CategoriesContainer';
-import ChartAdmin from '../Components/admin/ChartAdmin/ChartAdmin';
+// import ChartAdmin from '../Components/admin/ChartAdmin/ChartAdmin';
 import AccoutUser from '../Components/admin/AccoutUser/AccoutUser';
 import Order from '../Components/admin/Order/Order';
+import RegisterPage from '../Containers/user/registration';
+import Login from '../Containers/user/login'
 
 
 
@@ -27,7 +29,7 @@ export default class componentName extends Component {
                             path="/admin"
                             layout={HomePageAdmin}
                             exact
-                            component={ChartAdmin}
+                       
                         >  
                         </AppRouter>
                         {/* chưa lam */}
@@ -102,10 +104,16 @@ export default class componentName extends Component {
                             component={DetailContainer}
                         ></AppRouter>
                         <AppRouter
-                            path=""
-                            layout={Error404}
+                            path="/Registration"
+                            layout={HomePage}
                             exact
-                            component
+                            component={RegisterPage}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/Login"
+                            layout={HomePage}
+                            exact
+                            component={Login}
                         ></AppRouter>
                     </Switch>
                 </Router>

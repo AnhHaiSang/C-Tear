@@ -33,7 +33,7 @@ const MenuLink = ({label,to,activeOnlyWhenExact}) =>{
             return (
               <li className={active}>
                 <Link className="menu_items" to={to}>
-                  {label} 
+                  {label}
                 </Link>
               </li>
             )
@@ -49,12 +49,7 @@ class Menu extends React.Component {
         if (menu.length > 0) {
             result = menu.map((menu,index)=>{
                 return (
-                    <MenuLink 
-                    key={index} 
-                    label={menu.name} 
-                    to={menu.to} 
-                    activeOnlyWhenExact={menu.exact}
-                    />
+                    <MenuLink key={index} label={menu.name} to={menu.to} activeOnlyWhenExact={menu.exact}/>
                 )
             })
         }

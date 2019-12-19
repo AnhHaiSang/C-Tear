@@ -14,14 +14,31 @@
       "password": "123",
       "re-password": "123",
       "email": "email1",
-      "phone": "number",
-      "address": "123abc"
+      "phone": "number"
+    },
+    {
+      "name": "123",
+      "password": "123",
+      "re_password": "123",
+      "email": "123",
+      "phone": "123",
+      "address": "123",
+      "id": 2
+    },
+    {
+      "name": "321",
+      "password": "321",
+      "re_password": "321",
+      "email": "321",
+      "phone": "321",
+      "address": "321",
+      "id": 3
     }
   ],
   "products": [
     {
       "id": 1,
-      " name": "Rượu Vang 50 Anniversario",
+      "name": "Rượu Vang 50 Anniversario",
       "img": "../Product/product1.jpg",
       "price": 165,
       "inventory": 69,
@@ -318,48 +335,41 @@
       "review": 5,
       "description": "",
       "loaispId": 3
+    },
+    {
+      "name": "ruoi j do",
+      "img": "anh j do",
+      "price": "gia tien j do",
+      "inventory": "con nhiu do",
+      "review": "may sao do",
+      "description": "noi dung j do",
+      "loaispId": "1",
+      "id": 31
     }
   ],
-  "loaisp": [
-    {
-      "id": 2,
-      "name": "wine white",
-      "status": true
-    },
-    {
-      "id": 3,
-      "name": "wine champagne",
-      "status": true
-    },
-    {
-      "id": 4,
-      "name": "wine champagne 12",
-      "status": true
-    },
-    {
-      "id": 11,
-      "name": "sang dep trai123",
-      "status": true
-    },
-    {
-      "id": 12,
-      "name": "123",
-      "status": false
-    },
-    {
-      "id": 13,
-      "name": "sang de thuong",
-      "status": true
-    }
-  ],
+  "loaisp": [ {
+    "id": 1,
+    "name": "wine red",
+    "status": "1"
+  },
+  {
+    "id": 2,
+    "name": "wine white",
+    "status": "1"
+  },
+  {
+    "id": 3,
+    "name": "wine champagne",
+    "status": "1"
+  }],
   "orders": [
     {
       "id": 1,
       "userID": "",
       "addess": "stress",
-      "status ship": "",
-      "created at": "",
-      "total price": ""
+      "status_ship": "",
+      "created_at": "",
+      "total_price": ""
     }
   ],
   "order_details": []
