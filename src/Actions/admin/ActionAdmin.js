@@ -7,12 +7,12 @@ export const showApiCategories = () => {
         return ApiCall('loaisp', 'GET', null).then(res => {
             dispatch(showCategories(res.data));
         });
-    }; 
+    };  
 }
-
+ 
 export const showCategories = (categories) => {
     return {
-        type: Types.SHOWCATEGORIES,
+        type: Types.SHOWCATEGORIES, 
         categories
     }
 }
@@ -32,18 +32,50 @@ export const addCategories = (categories) => {
     }
 }
 
-//xoa categories
+//del categories
+
 export const actDelApiCategories = (id) => {
     return dispatch => {
-        return ApiCall(`loaisp/${id}`, '', null).then(res => {
-            dispatch(addCategories(res.data));
+        return ApiCall(`loaisp/${id}`, 'DELETE', null).then( res => {
+            dispatch(delCategories(id));
         });
     };
 }
-
-export const delCategories = (categories) => {
+export const delCategories = (id) => {
     return {
-        type: Types.DELETE_PRODUCT_IN_SV,
+        type: Types.DELETE_CATEGORIES_IN_SV,
+        id
+    }
+}
+
+// edit categories
+export const actEditCategories = (id)=>{
+    return dispatch =>{
+        return ApiCall(`loaisp/${id}`, 'GET', null).then( res =>{
+            dispatch(editCategories(res.data));
+        });
+    };
+}
+export const editCategories = (categories) => {
+    return {
+        type: Types.EDIT_CATEGORIES_IN_SV,
+        categories 
+    }
+}
+ 
+// update categories
+export const actUpCategoriesRequest  = (categories) => {
+    return dispatch => {
+        return ApiCall (`loaisp/${categories.id}`, 'PUT', categories).then(res=>{
+            dispatch(actUpCategories(res.data))
+        })
+    }
+}
+
+
+export const actUpCategories  = (categories) => {
+    return {
+        type : Types.UPDATE_CATEGORIES_IN_SV,
         categories
     }
 }

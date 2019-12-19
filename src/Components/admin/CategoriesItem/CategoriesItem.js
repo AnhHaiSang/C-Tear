@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
-
+ 
 class CategoriesItem extends Component {
       render() {
-        console.log(this.props.categories.id);
-        
         let {id, name, status } = this.props.categories;
         var statusName = status ? 'Còn Hàng' : 'Hết Hàng';
         var statusClass = status ? 'warning' : 'danger';
+        
         return (
             <tr>
+                <td>{this.props.index + 1}</td>
                 <td>{name}</td>
                 <td>
                     <span className={`badge badge-${statusClass}`}>
@@ -17,24 +18,27 @@ class CategoriesItem extends Component {
                     </span>
                 </td>
                 <td>
-                    <button
-                        type="button"
+                    <Link 
+                        to={`/admin/categories/edit/${id}`}
                         className="btn btn-primary mr-10">
                         Sửa
-                    </button>
+                    </Link>
                     <button
-                        onClick={this.delete(id)}
+                        onClick={()=>this.delete(id)}
                         type="button"
                         className="btn btn-secondary">
                         Xóa
-                    </button>
+                    </button> 
                 </td>
             </tr>
         )
     }
-    delete(id){
-        this.props.delCategories(id)
+    delete=(id)=>{
+        if (confirm('Bạn chắc chắn muốn xóa ?')) { //eslint-disable-line
+            this.props.delcategories(id);
+        }
     }
+  
 }
 
 

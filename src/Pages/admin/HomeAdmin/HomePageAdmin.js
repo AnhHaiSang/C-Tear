@@ -1,7 +1,6 @@
 import React from 'react';
 import './admin.css';
 import Menu from '../../../Components/admin/Menu/Menu';
-// import ProductList from '../../../Components/admin/ProductList/ProductList';
 import slide1 from '../../../Image_Rudu/slide1.jpg';
 
 class HomePageAdmin extends React.Component {
@@ -13,7 +12,7 @@ class HomePageAdmin extends React.Component {
                         <img className="slide_items" src={slide1} alt="slide-1-2050x898" width={1100} height={100} />
                     </div>
                     <div className="row content">
-                        <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <nav className="navbar navbar-expand-sm bg-dark navbar-dark" style={{display:"block"}}>
                             <div className="col-sm-3 sidenav">
                                 <h4 className="h4-name-team ml-10 mt-10">C-Tear</h4>
                                 <Menu />

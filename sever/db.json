@@ -322,19 +322,34 @@
   ],
   "loaisp": [
     {
-      "id": 1,
-      "name": "wine red",
-      "status": "1"
-    },
-    {
       "id": 2,
       "name": "wine white",
-      "status": "1"
+      "status": true
     },
     {
       "id": 3,
       "name": "wine champagne",
-      "status": "1"
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "wine champagne 12",
+      "status": true
+    },
+    {
+      "id": 11,
+      "name": "sang dep trai123",
+      "status": true
+    },
+    {
+      "id": 12,
+      "name": "123",
+      "status": false
+    },
+    {
+      "id": 13,
+      "name": "sang de thuong",
+      "status": true
     }
   ],
   "orders": [

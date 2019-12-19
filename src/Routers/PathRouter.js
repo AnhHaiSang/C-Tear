@@ -54,6 +54,13 @@ export default class componentName extends Component {
                         >
                         </AppRouter>
                         <AppRouter
+                            path="/admin/categories/edit/:id"
+                            layout={HomePageAdmin}
+                            exact
+                            component={CatelogyActionPage}
+                        >
+                        </AppRouter>
+                        <AppRouter
                             path="/admin/accout"
                             layout={HomePageAdmin}
                             exact

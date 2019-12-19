@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { actAddApiCategories } from '../../../Actions/admin/ActionAdmin';
+import { actAddApiCategories, actEditCategories, actUpCategoriesRequest } from '../../../Actions/admin/ActionAdmin';
+import { Link } from 'react-router-dom';
 
 
 class CatelogyActionPage extends Component {
@@ -9,41 +10,75 @@ class CatelogyActionPage extends Component {
         this.txtname = React.createRef();//lay value cua input va check value cua input
         this.txtstatus = React.createRef();//   "    "   checkbox
         this.state = {
-            id: '',
+            id : '',
             name: '',
             status: ''
         };
     }
-    componentDidMount(){
-        // this.props.actCategories
+
+    //sử dụng lifecycle để lấy dữ liệu
+    componentDidMount() {
+        var { match } = this.props;
+        console.log(this.props.match.params);
+        if (match.params.id) {
+            var id = match.params.id;
+            // console.log(id); 
+            this.props.editCate(id);
+        }
     }
-    onSave = (e) => { 
+    UNSAFE_componentWillReceiveProps(nextProps) {
+        console.log(nextProps);
+        if (nextProps && nextProps.EditItem) {
+            var { EditItem } = nextProps;
+            this.setState({
+                id: EditItem.id,
+                name: EditItem.name,
+                status: EditItem.status,
+            })
+        }
+    }
+
+    onSave = (e) => {
         e.preventDefault()
-        // console.log(this.props.actCategories.length);
-        var {id,name,status} = this.state;
-        // var id = this.props.actCategories.length+1;
+        var { id } = this.state;
         var txtname = this.txtname.current.value;
         var chbstatus = this.txtstatus.current.checked;
-        // console.log(ckbstatus);
         var categories = {
-            id:id,
-            name:txtname,
-            status:chbstatus,
+            id ,
+            name: txtname,
+            status: chbstatus,
         }
-        this.props.addCategories(categories);
-        this.props.history.goBack('/admin/categories');
-    }
+        let { history } = this.props
+        // console.log(id);
+        if (id) {
+            // console.log('updateting...');
+            this.setState({
+                name: txtname,
+                status: chbstatus
+            });
+            this.props.update(categories)
+        } else {
+            this.setState({
+                name: txtname,
+                status: chbstatus
+            });
+            this.props.addCategories(categories);
+        }
+        history.goBack();
+    } 
     render() {
-        console.log(this.props);
+        console.log(this.state);
+        let { name , status } = this.state;
         return (
             <form className="form-inline" onSubmit={this.onSave}>
-                <label htmlFor="email2" className="mb-2 mr-sm-2 ml-10">Name:</label>
+                <label htmlFor="email2" className="mb-2 mr-sm-2 ml-10">Categories Name</label>
                 <input
                     type="text"
                     className="form-control mb-2 mr-sm-2"
                     ref={this.txtname}
                     id="email2"
                     name="email"
+                    defaultValue={name}
                 />
                 <div className="form-check mb-2 mr-sm-2">
                     <label className="form-check-label">
@@ -52,6 +87,7 @@ class CatelogyActionPage extends Component {
                             ref={this.txtstatus}
                             className="form-check-input active"
                             name="loaispId"
+                            defaultChecked={this.txtstatus}
                         />Còn
                     </label>
                 </div>
@@ -60,11 +96,11 @@ class CatelogyActionPage extends Component {
                     className="btn btn-primary mb-2 mr-10"
                 >Lưu
                 </button>
-                <button
-                    type="reset"
+                <Link
+                    to="/admin/categories"
                     className="btn btn-primary mb-2"
                 >Hủy
-                </button>
+                </Link>
             </form>
 
         )
@@ -74,7 +110,7 @@ class CatelogyActionPage extends Component {
 const mapStateToProps = (state, ownProps) => {
 
     return {
-        actCategories: state.CategoriesReducerAdmin
+        EditItem: state.EditItem
     }
 }
 
@@ -82,8 +118,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         addCategories: (categories) => {
             dispatch(actAddApiCategories(categories))
+        },
+        editCate: (id) => {
+            dispatch(actEditCategories(id))
+        },
+        update: (categories) => {
+            dispatch(actUpCategoriesRequest(categories))
         }
-        
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(CatelogyActionPage)
