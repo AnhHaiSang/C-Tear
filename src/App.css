@@ -8,11 +8,6 @@ body {
   position: relative;
 }
 
-.h1, h1 {
-  font-size: 30px;
-  text-align: center !important;
-  margin-top: 100px;
-}
 .h4, h4 {
   font-size: 20px;
 }
@@ -62,7 +57,6 @@ img.slide_items {
   display: block !important;
   position: absolute;
   top: 15%;
-  left: 18%;
   background: #efef;
 }
 .img_card {
@@ -192,10 +186,28 @@ span.input-group-text {
   list-style-type: none;
   padding: 0;
 }
-
-
-    
-
+.detail{
+  margin: auto; 
+  width: 60%
+}
+.main{
+  margin:auto;
+  width:70%
+}
+.login{
+  margin:auto;
+  width: 50%;
+  padding-top: 1%;
+}
+.floatR{
+  float: right;
+}
+.cart--img{
+  width: px;
+}
+.profiletext{
+  text-align: center;
+}    
 
 
 

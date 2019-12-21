@@ -3,23 +3,34 @@ var data = JSON.parse(localStorage.getItem('CART'));
 const CartReducerInitialState = data ? data : [];
 
 const CartReducer = (state = CartReducerInitialState, action) => {
-    let {product,total} = action
+    let {product,count} = action
     var index = -1;
     switch (action.type) {
         case Types.ADD_TO_CART:
-                index = findProductInCart(state, product);
+                index = findProductInCart(state, product);       
                 if (index !== -1) {
-                    state[index].price += total;
+                    state[index].count += count;
                 } else {
                     state.push({
                         product,
-                        total
+                        count
                     });
                 }
                 // console.log(localStorage.getItem('CART'));
-                
             localStorage.setItem('CART',JSON.stringify(state));
             return [...state]
+// localStorage.setItem('CART',JSON.stringify(state.user.name));
+        case Types.DELETE_PRODUCT_IN_CART:
+            index = findProductInCart(state, product.product);
+            // console.log(index);
+            
+            if (index !== -1) {
+                state.splice(index, 1);
+                
+            }
+            localStorage.setItem('CART', JSON.stringify(state));
+            return [...state];
+
         default:
             return state
     }

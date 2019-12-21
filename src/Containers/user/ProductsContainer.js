@@ -11,8 +11,13 @@ import PropTypes from 'prop-types';
 
 
 class ProductsContainer extends React.Component {
+    componentDidMount(){
+        this.props.showProductsapi();
+    }
     render() {
-        var {products} = this.props; // console.log(products);
+        var {products} = this.props;
+        // console.log(this.props.products);
+        
         return (
             <div>
                 {/* conponent danh sách sản phẩm */}
@@ -23,14 +28,12 @@ class ProductsContainer extends React.Component {
         )
     }
      // hàm này dùng để hiển thị danh sách sản phầm ở homepage
-     showProducts(products) {
-         let {addtocart} =this.props;
-         
+     showProducts(products) {  
         var result = null;
         if(products.length > 0 ){
             result = products.map((products, index) => {
                 return  <li key={index} className="list-group-item">
-                            <ListsProduct key={index} products={products} addtocart={addtocart}/>
+                            <ListsProduct key={index} products={products}/>
                         </li>;
             });
         }
@@ -55,15 +58,16 @@ ProductsContainer.propTypes ={
     ).isRequired
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
+    // console.log(state.productsReducer.state);
     return {
         products: state.productsReducer  //(productsReducer) trong file index trong reducer
     }
 }
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        addtocart: (product,total) => {
-            dispatch(action.AddToCart(product,total))
+        showProductsapi: ()=>{
+            dispatch(action.showapiproduct()) 
         }
     }
 }

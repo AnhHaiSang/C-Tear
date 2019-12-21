@@ -1,0 +1,10 @@
+.mr-10{
+    margin-right: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.panel.panel-primary {
+    border: 0.125px solid black;
+    border-radius: 4px;
+}
