@@ -7,9 +7,9 @@ export default class CartDetailItems extends Component {
         let { product, count } = this.props.cartItems
         let {cartItems} = this.props
         return (
-            <tr>
+            <tr style={{textAlign:"center"}}>
                 <th scope="row">
-                    <img src={product.img} style={{ width: "50%" }} alt="" />
+                    <img src={product.img} style={{ width: "100%" }} alt="" />
                 </th>
                 <td>{product.name}</td>
                 <td>{product.price}</td>

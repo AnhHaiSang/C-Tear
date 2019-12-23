@@ -4,7 +4,7 @@ import {
     Link
 } from "react-router-dom";
 import logo from './../img/Image_Rudu/logo.png';
-import cart from './cart.png';
+
 
 const menu = [
     {
@@ -70,7 +70,7 @@ class Menu extends React.Component {
                     <ul className="navbar-nav">
                         {this.showMenus(menu)}
                     </ul>
-                    <Link className="floatR navbar-brand cart--img"to="/giohang"><img src={cart} /></Link>
+                    <Link className="floatR navbar-brand cart--img"to="/giohang"></Link>
                 </nav>
             </div>
         )

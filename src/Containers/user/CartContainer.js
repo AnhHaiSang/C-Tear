@@ -45,6 +45,11 @@ class CartContainer extends Component {
             result = cartItems.map((cartItems, index) => {
                 return <CartDetailItems key={index} cartItems={cartItems} delcart={delcart} />
             });
+        } else {
+            result = <tr>
+                <td colSpan={6}><h1>Bạn không có sản phẩm nào</h1></td>
+                
+            </tr>
         }
         return result;
 
@@ -97,7 +102,7 @@ class CartContainer extends Component {
         return result;
     }
     ShowProfile = (users) => {
-        let {cartItems}=this.props;
+        let { cartItems } = this.props;
         let result = null;
         if (users.length > 0) {
             result = users.map((item, index) => {
@@ -115,12 +120,12 @@ class CartContainer extends Component {
 
                                         <div>
                                             <label htmlFor="name">HỌ VÀ TÊN</label>
-                                            <input type="text" className="form-control" name="name" placeholder="Nhập họ tên" onChange={this.handOnChange} defaultValue={item.name}/>
+                                            <input type="text" className="form-control" name="name" placeholder="Nhập họ tên" onChange={this.handOnChange} defaultValue={item.name} />
                                         </div>
                                         <div className="form-row">
                                             <div className="form-group col-md-6">
                                                 <label htmlFor="phone">SỐ ĐIỆN THOẠI</label>
-                                                <input type="number" className="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" onChange={this.handOnChange}  defaultValue={item.phone}/>
+                                                <input type="number" className="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" onChange={this.handOnChange} defaultValue={item.phone} />
                                             </div>
                                             <div className="form-group col-md-6">
                                                 <label htmlFor="email">Hinh thuc thanh toan</label>
@@ -134,7 +139,7 @@ class CartContainer extends Component {
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="address">ĐỊA CHỈ</label>
-                                            <input type="text" className="form-control" id="address" name="address" placeholder="Nhập địa chỉ" onChange={this.handOnChange}  defaultValue={item.address}/>
+                                            <input type="text" className="form-control" id="address" name="address" placeholder="Nhập địa chỉ" onChange={this.handOnChange} defaultValue={item.address} />
                                         </div>
                                         <div className="form-group" style={{ float: "right" }}>
                                             <p>Tổng Tiền: <span className="text-danger">{this.showTotal(cartItems)}$</span> </p>
@@ -175,7 +180,7 @@ class CartContainer extends Component {
                     <table className="table cart" border={1}>
                         <thead className="thead-light">
                             <tr>
-                                <th scope="col">ẢNH</th>
+                                <th scope="col" style={{width:"25%"}}>ẢNH</th>
                                 <th scope="col">TÊN SẢN PHẨM</th>
                                 <th scope="col">GIÁ</th>
                                 <th scope="col" style={{ width: '100px' }}>SỐ LƯỢNG</th>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import ProductDescrible from './productDetailDescribe';
 class ProductDetailLists extends React.Component {
   constructor(props) {
     super(props);
@@ -53,10 +53,10 @@ class ProductDetailLists extends React.Component {
   //     history.push('/giohang')
   //   } else { history.push('/login') }
   // }
-
+  log
   render() {
     var { products } = this.props;
-
+   
     // console.log(this.props);
 
     return (
@@ -112,25 +112,7 @@ class ProductDetailLists extends React.Component {
           </div>
         </div>
 
-        <div >
-          <ul className="nav nav-tabs" style={{ width: "85%", margin: "auto", textAlign: "center" }}>
-            <li className="active tabsE" ><a data-toggle="tab" href="#menu1">ĐẶC ĐIỂM NỔI BẬT</a></li>
-            <li className="tabsE" ><a data-toggle="tab" href="#menu2"  >THÔNG TIN SẢN PHẨM</a></li>
-            <li className="tabsE" ><a data-toggle="tab" href="#menu3"  >ĐÁNH GIÁ</a></li>
-          </ul>
-          <div className="tab-content" >
-
-            <div id="menu1" className="tab-pane fade in active">
-              <p>{products.name} có hương thơm thanh nhã của các loại hoa trắng. Hòa quyện trong hương hoa nhài là  mùi vị nồng đượm của quả mận ngọt , quả sung chín , cam tây , quế nghiền và quả phỉ mang đến cho người thưởng thức một trải nghiệm phong phú, dư vị mượt mà, sâu sắc và kéo dài mãi về sau.</p>
-            </div>
-            <div id="menu2" className="tab-pane fade">
-              <p>{products.name} có hương thơm thanh nhã của các loại hoa trắng. Hòa quyện trong hương hoa nhài là  mùi vị nồng đượm của quả mận ngọt , quả sung chín , cam tây , quế nghiền và quả phỉ mang đến cho người thưởng thức một trải nghiệm phong phú, dư vị mượt mà, sâu sắc và kéo dài mãi về sau.</p>
-            </div>
-            <div id="menu3" className="tab-pane fade">
-              <p>{products.name} có hương thơm thanh nhã của các loại hoa trắng. Hòa quyện trong hương hoa nhài là  mùi vị nồng đượm của quả mận ngọt , quả sung chín , cam tây , quế nghiền và quả phỉ mang đến cho người thưởng thức một trải nghiệm phong phú, dư vị mượt mà, sâu sắc và kéo dài mãi về sau.</p>
-            </div>
-          </div>
-        </div>
+        <ProductDescrible products={products}/>
 
       </div>
     )
