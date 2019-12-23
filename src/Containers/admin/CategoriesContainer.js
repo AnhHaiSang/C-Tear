@@ -25,8 +25,10 @@ class CategoriesContainer extends Component {
     render() {
         // console.log(this.props.categories);
         return (
-            <div className="col-sm-9 mt-10">
-                <h3 style={{ textAlign: "center", marginBottom: "30px", marginTop: "10px" }}>Manage Categories</h3>
+            <div className="col-sm-9 mt-10 free-size">
+                <h3 style={{ textAlign: "center", marginBottom: "30px", marginTop: "10px" }}>
+                    Manage Categories
+                </h3>
                 <Link
                     to="/admin/categories/add"
                     className="btn btn-info mb-10">
@@ -58,9 +60,9 @@ class CategoriesContainer extends Component {
         )
     }
 }
-const mapStateToProps = (state, ownProps) => {  
+const mapStateToProps = (state, ownProps) => {
     return {
-        categories: state.CategoriesReducerAdmin
+        categories: state.CategoriesReducerAdmin 
     }
 }
 
@@ -72,8 +74,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         delcategories: (id) => {
             dispatch(actDelApiCategories(id))
         }
-        
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CategoriesContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(CategoriesContainer);

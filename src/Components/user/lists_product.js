@@ -11,7 +11,7 @@ class ListsProduct extends React.Component {
         return (
             <div className="items1">
                 <div className="card_items">
-                    <Link to={`/ProductDetail/${products.id}`}>
+                    <Link to="/">
                         <div className="items_img">
                             <img className="img_items" src={products.img} alt="product_item" />
                         </div>
@@ -26,13 +26,27 @@ class ListsProduct extends React.Component {
                             </h4>     
                             <p className="price">${products.price}</p>
                             </div>
-                            <p>Xem Thêm</p>                 
+                            <div className="button_items">
+                                {/* <button onClick={()=>this.getDetail(products)} type="button" className="btn btn-primary">Add to Cart</button> */}
+                                <p>
+                                <Link to={`/ProductDetail/${products.id}`}>Xem thêm</Link>
+                                </p>
+                            </div>
+                        
+                        <div className="clr"></div>
                     </Link>
                 </div>
             </div>
 
         )
     }
+    addcart = (product,total) => {
+        this.props.addtocart(product,total);
+    };
+    getDetail = (product) => {
+        this.props.getproductdetail(product);
+    }
+    
     
     showReview(review) {
         var result = [];

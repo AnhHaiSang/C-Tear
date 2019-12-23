@@ -14,126 +14,109 @@
       "password": "123",
       "re-password": "123",
       "email": "email1",
-      "phone": "number"
-    },
-    {
-      "name": "123",
-      "password": "123",
-      "re_password": "123",
-      "email": "123",
-      "phone": "123",
-      "address": "123",
-      "id": 2
-    },
-    {
-      "name": "321",
-      "password": "321",
-      "re_password": "321",
-      "email": "321",
-      "phone": "321",
-      "address": "321",
-      "id": 3
+      "phone": "number",
+      "address": "123abc"
     }
   ],
   "products": [
     {
       "id": 1,
       "name": "Rượu Vang 50 Anniversario",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product1_say0eu.jpg",
       "price": 165,
       "inventory": 69,
       "review": 4,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 2,
       "name": "RƯỢU VANG 60 SESSANTANNI LIMITED EDITION",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product2_rlyuco.jpg",
       "price": 165,
       "inventory": 34,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 3,
       "name": "RƯỢU VANG 62 ANNIVERSARIO",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product3_rbafgc.jpg",
       "price": 165,
       "inventory": 51,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 4,
       "name": "RƯỢU VANG ANIMA DI NEGROAMARO",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product4_j55gc8.jpg",
       "price": 185,
       "inventory": 50,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 5,
       "name": "RƯỢU VANG F LIMITED",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product5_tanghy.jpg",
       "price": 300,
       "inventory": 45,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 6,
       "name": "RƯỢU VANG F NEGROAMARO SAN MARZANO",
-      "img": "../Product/product1.jpg",
+      "img": "../Product/product1.jpghttps://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product6_bslkwk.jpg",
       "price": 450,
       "inventory": 15,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 7,
       "name": "RƯỢU VANG M LIMITED EDITION MERLOT SALENTO",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product7_qripl5.jpg",
       "price": 500,
       "inventory": 23,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 8,
       "name": "RƯỢU VANG M MALVASIA NERA",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product8_z9gilv.jpg",
       "price": 500,
       "inventory": 24,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 9,
       "name": "RƯỢU VANG TALO NEGROAMARO",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product9_xzqfqp.jpg",
       "price": 750,
       "inventory": 14,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
       "id": 10,
       "name": "RƯỢU VANG IL PUMO NEGROAMARO 100 YEARS",
-      "img": "../Product/product1.jpg",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product10_w802on.jpg",
       "price": 100,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 1
     },
     {
@@ -143,7 +126,7 @@
       "price": 300,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -153,7 +136,7 @@
       "price": 500,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -163,7 +146,7 @@
       "price": 550,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -173,7 +156,7 @@
       "price": 560,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -183,7 +166,7 @@
       "price": 600,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -193,7 +176,7 @@
       "price": 620,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -203,7 +186,7 @@
       "price": 700,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -213,7 +196,7 @@
       "price": 800,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -223,7 +206,7 @@
       "price": 920,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -233,7 +216,7 @@
       "price": 100,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 2
     },
     {
@@ -243,7 +226,7 @@
       "price": 200,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -253,7 +236,7 @@
       "price": 210,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -263,7 +246,7 @@
       "price": 250,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -273,7 +256,7 @@
       "price": 250,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -283,7 +266,7 @@
       "price": 500,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -293,7 +276,7 @@
       "price": 800,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -303,7 +286,7 @@
       "price": 800,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -313,7 +296,7 @@
       "price": 900,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -323,7 +306,7 @@
       "price": 100,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
@@ -333,43 +316,65 @@
       "price": 100,
       "inventory": 10,
       "review": 5,
-      "description": "",
+      "description": "Rượu vang đỏ có chứa một hỗn hợp phức tạp các hợp chất hoạt tính sinh học, trong đó có flavonol, monomeric và polymeric flavan-3-ols, anthocyanins, axit phenolic và resveratrol. Brown cho biết một vài trong số các hợp chất kể trên, đặc biệt là resveratrol, có lợi cho sức khỏe. ",
       "loaispId": 3
     },
     {
-      "name": "ruoi j do",
-      "img": "anh j do",
-      "price": "gia tien j do",
-      "inventory": "con nhiu do",
-      "review": "may sao do",
-      "description": "noi dung j do",
-      "loaispId": "1",
-      "id": 31
+      "id": 31,
+      "name": "",
+      "prive": "",
+      "Inventory": "",
+      "Review": "1",
+      "Categories": "1"
     }
   ],
-  "loaisp": [ {
-    "id": 1,
-    "name": "wine red",
-    "status": "1"
-  },
-  {
-    "id": 2,
-    "name": "wine white",
-    "status": "1"
-  },
-  {
-    "id": 3,
-    "name": "wine champagne",
-    "status": "1"
-  }],
+  "loaisp": [
+    {
+      "id": 2,
+      "name": "wine white",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "wine champagne",
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "wine champagne 12",
+      "status": true
+    },
+    {
+      "id": 11,
+      "name": "sang dep trai123",
+      "status": true
+    },
+    {
+      "id": 13,
+      "name": "sang de thuong",
+      "status": true
+    }
+  ],
   "orders": [
     {
       "id": 1,
-      "userID": "",
+      "thongtin": {
+        "username": "email1"
+      },
       "addess": "stress",
-      "status_ship": "",
-      "created_at": "",
-      "total_price": ""
+      "status ship": "",
+      "created at": "",
+      "total price": ""
+    },
+    {
+      "id": 2,
+      "thongtin": {
+        "username": "email12"
+      },
+      "addess": "stress",
+      "status ship": "",
+      "created at": "",
+      "total price": ""
     }
   ],
   "order_details": []

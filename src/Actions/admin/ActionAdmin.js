@@ -80,5 +80,79 @@ export const actUpCategories  = (categories) => {
     }
 }
 
+// --------------------Product Action-------------
+// show products
+export const actShowProductsApi = () => {
+    return dispatch => {
+        return ApiCall('products', 'GET', null).then(res => {
+            dispatch(showProducts(res.data));
+        });
+    };  
+}
 
+export const showProducts = (products) => {
+    return {
+        type: Types.SHOW_PRODUCTS, 
+        products
+    }
+}
 
+// add product in admin
+export const actAddApiProducts = (products) => {
+    return dispatch => {
+        return ApiCall('products', 'POST', products).then(res => {
+            dispatch(addProductsAdmin(res.data));
+        });
+    };
+}
+
+export const addProductsAdmin = (products) => {
+    return{
+        type: Types.ADD_PRODUCTS_TO_SV,
+        products
+    }
+}
+
+// delete product in admin
+export const actDelApiProducts = (id) => {
+    return dispatch => {
+        return ApiCall(`products/${id}`, 'DELETE', null).then( res => {
+            dispatch(delProducts(id));
+        });
+    };
+}
+export const delProducts = (id) => {
+    return {
+        type: Types.DELETE_PRODUCTS_IN_SV,
+        id
+    }
+}
+// edit products
+export const actEditProducts = (id)=>{
+    return dispatch =>{
+        return ApiCall(`products/${id}`, 'GET', null).then( res =>{
+            dispatch(editProducts(res.data));
+        });
+    };
+}
+export const editProducts = (products) => {
+    return {
+        type: Types.EDIT_PRODUCTS_IN_SV,
+        products 
+    }
+}
+
+// updete products
+export const actUpProductsRequest  = (products) => {
+    return dispatch => {
+        return ApiCall (`loaisp/${products.id}`, 'PUT', products).then(res=>{
+            dispatch(updateProducts(res.data))
+        })
+    }
+}
+export const updateProducts = (products) =>{
+    return{
+        type: Types.UPDATE_PRODUCTS_IN_SV,
+        products
+    }
+}

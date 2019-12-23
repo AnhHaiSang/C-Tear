@@ -28,12 +28,14 @@ class ProductsContainer extends React.Component {
         )
     }
      // hàm này dùng để hiển thị danh sách sản phầm ở homepage
-     showProducts(products) {  
+     showProducts(products) {
+         let {addtocart , getproductdetail} =this.props;
+         
         var result = null;
         if(products.length > 0 ){
             result = products.map((products, index) => {
                 return  <li key={index} className="list-group-item">
-                            <ListsProduct key={index} products={products}/>
+                            <ListsProduct key={index} products={products} addtocart={addtocart} getproductdetail={getproductdetail}/>
                         </li>;
             });
         }
@@ -66,8 +68,14 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
+        addtocart: (product,total) => {
+            dispatch(action.AddToCart(product,total))
+        },
+        getproductdetail: (product) => {
+            dispatch(action.GetProductDetail(product))
+        },
         showProductsapi: ()=>{
-            dispatch(action.showapiproduct()) 
+            dispatch(action.showapiproduct())
         }
     }
 }

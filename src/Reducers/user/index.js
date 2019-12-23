@@ -2,9 +2,9 @@ import { combineReducers } from 'redux';
 import productsReducer from './ProductReducer';
 import CartReducer from './CartReducer';
 import CategoriesReducerAdmin from '../admin/CategoriesReducerAdmin';
-import categoriesReducer from '../user/CategoriesReducer';
+import ProductsReducerAdmin from '../admin/ProductsReducerAdmin';
 import EditItem from '../admin/EditItem';
-import UserReducer from '../user/UserReducer';
+import EditProductsItem from '../admin/EditProductsItem';
 
 
 const appReducers = combineReducers({
@@ -12,8 +12,8 @@ const appReducers = combineReducers({
     CartReducer,
     CategoriesReducerAdmin,
     EditItem,
-    categoriesReducer,
-    UserReducer
+    ProductsReducerAdmin,
+    EditProductsItem
     
 })
 export default appReducers;

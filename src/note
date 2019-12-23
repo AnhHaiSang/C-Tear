@@ -13,3 +13,4 @@
       "name": "wine champagne",
       "status": "1"
     }
+    var { name, price, inventory, review, loaispId} = this.state;

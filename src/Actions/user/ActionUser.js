@@ -4,96 +4,62 @@ import ApiCall from '../../utils/ApiCall';
 //show product
 export const showapiproduct = () => {
     return dispatch => {
-        return ApiCall(`products?_page=3`, 'GET', null).then(res => {
+        return ApiCall('products', 'GET', null).then(res => {
             dispatch(showproduct(res.data));
         });
-    };// hàm này khi được gọi lên sẽ đến products trong server -> thông qua phương thức GET -> truyền res.data(thông số của sản phẩm ở trên server) cho hàm showproduct
+    };
 }
 
 export const showproduct = (products) => {
     return {
         type : Types.SHOWPRODUCT,
-        products //khi được truyền hàm sẽ show các thông số của products (res.data)
+        products
     }
-}   
-
-//get du lieu qua detail-----------------------------------------------------------
+}
+//get du lieu qua detail
 export const GetApiDetails = (id)=>{
     return dispatch => {
         return ApiCall(`products/${id}`, 'GET', null).then(res => {
             dispatch(GetProductDetail(res.data));
-        }); 
+        });
     };
-}//hàm này sẽ lấy dữ liệu của sản phẩm được chọn thông qua dấu `...` (http://localhost:3000/products/{id})
+}
 
 export const GetProductDetail = (products) =>{
     return{
-        type: Types.GET_PRODUCT_DETAIL, 
+        type: Types.GET_PRODUCT_DETAIL,
         products
     }
 }
-
-//categories---------------------------------------------------------------------
+//categories
 export const GetApiCatgories = (id)=>{
     return dispatch => {
-        return ApiCall(`loaisp/${id}/products?_start=1&_limit=4`, 'GET', null).then(res => {
+        return ApiCall(`loaisp/${id}/products`, 'GET', null).then(res => {
             dispatch(GetProductCategories(res.data));
         });
     };
 }
 
-export const GetProductCategories = (categories) =>{
+export const GetProductCategories = (products) =>{
     return{
         type: Types.GET_PRODUCT_CATEGORIES,
-        categories
+        products
     }
 }
 
-//----------------------------------------------------------------//
-export const AddToCart = (product,count) =>{
+
+export const AddToCart = (product, total) =>{
     return{
         type: Types.ADD_TO_CART,
         product,
-        count,
+        total
     }
 } 
 
-export const DelToCart = (product) => {
+export const DauCong = (product, total) => {
     return{
-        type: Types.DELETE_PRODUCT_IN_CART,
-        product
+        type: Types.UPDATE_PRODUCT_IN_CART,
+        product,
+        total
     }
 }
-
-//add user 
-export const addUserAPI = (users) => {
-    return dispatch => {
-        ApiCall(`users`,'POST',users).then(res=>{
-            dispatch(addUsers(res.data))
-        })
-    }
-}
-
-export const addUsers = (users) => {
-    return {
-        type : Types.ADDUSER,
-        users
-    }
-}
-
-//get user api 
-export const GetUserApi = () => {
-    return dispatch => {
-        ApiCall(`users`,'GET',null).then(res=>{
-            dispatch(getuser(res.data))
-        })
-    }
-}
-export const getuser = (users) => {
-    return {
-        type : Types.GETAPIUSER,
-        users
-    }
-}
-
-

@@ -10,7 +10,7 @@ class CatelogyActionPage extends Component {
         this.txtname = React.createRef();//lay value cua input va check value cua input
         this.txtstatus = React.createRef();//   "    "   checkbox
         this.state = {
-            id : '',
+            id: '',
             name: '',
             status: ''
         };
@@ -27,13 +27,13 @@ class CatelogyActionPage extends Component {
         }
     }
     UNSAFE_componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
+        // console.log(nextProps);
         if (nextProps && nextProps.EditItem) {
             var { EditItem } = nextProps;
             this.setState({
                 id: EditItem.id,
                 name: EditItem.name,
-                status: EditItem.status,
+                status: EditItem.chbstatus,
             })
         }
     }
@@ -44,7 +44,7 @@ class CatelogyActionPage extends Component {
         var txtname = this.txtname.current.value;
         var chbstatus = this.txtstatus.current.checked;
         var categories = {
-            id ,
+            id,
             name: txtname,
             status: chbstatus,
         }
@@ -65,51 +65,58 @@ class CatelogyActionPage extends Component {
             this.props.addCategories(categories);
         }
         history.goBack();
-    } 
+    }
     render() {
-        console.log(this.state);
-        let { name , status } = this.state;
+        // console.log(this.state);
+        // console.log(this.props.EditItem.status); 
+        let { name } = this.state;
         return (
-            <form className="form-inline" onSubmit={this.onSave}>
-                <label htmlFor="email2" className="mb-2 mr-sm-2 ml-10">Categories Name</label>
-                <input
-                    type="text"
-                    className="form-control mb-2 mr-sm-2"
-                    ref={this.txtname}
-                    id="email2"
-                    name="email"
-                    defaultValue={name}
-                />
-                <div className="form-check mb-2 mr-sm-2">
-                    <label className="form-check-label">
+            <div className="div-form-categories">
+                <h3 style={{textAlign: "center"}}>Form Categories</h3>
+                <form className="form-categories" onSubmit={this.onSave}>
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" style={{width: "133px"}}>Categories Name</span>
+                        </div>
                         <input
-                            type="checkbox"
-                            ref={this.txtstatus}
-                            className="form-check-input active"
-                            name="loaispId"
-                            defaultChecked={this.txtstatus}
-                        />Còn
-                    </label>
-                </div>
-                <button
-                    type="submit"
-                    className="btn btn-primary mb-2 mr-10"
-                >Lưu
-                </button>
-                <Link
-                    to="/admin/categories"
-                    className="btn btn-primary mb-2"
-                >Hủy
-                </Link>
-            </form>
-
+                        type="text"
+                        className="form-control form-control"
+                        ref={this.txtname}
+                        id="email2"
+                        name="email"
+                        defaultValue={name}
+                    />
+                    </div>
+                    <div className="form-check mb-2 mr-sm-2">
+                        <label className="form-check-label">
+                            <input
+                                type="checkbox"
+                                ref={this.txtstatus}
+                                className="form-check-input active"
+                                name="loaispId"
+                                checked={this.props.EditItem.status}
+                            />Còn Hàng
+                        </label>
+                    </div>
+                        <button
+                            type="submit"
+                            className="btn btn-primary mb-2 mr-10"
+                        >Lưu
+                        </button>
+                        <Link
+                            to="/admin/categories"
+                            className="btn btn-primary mb-2"
+                        >Hủy
+                        </Link>
+                </form>
+            </div>
         )
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
 
-    return {
+    return { 
         EditItem: state.EditItem
     }
 }

@@ -1,13 +1,13 @@
 import * as Types from '../../Constants/admin/TypeActionAdmin';
 
-const CategoriesInitialState = []
+const CategoriesInitialState = [];
 
 const CategoriesReducerAdmin = (state = CategoriesInitialState, action) => {
     switch (action.type) {
         case Types.SHOWCATEGORIES:
             state = action.categories;
             return [...state]
-        case Types.ADD_TO_SV:
+        case Types.ADD_TO_SV: 
             state.push(action.categories);
             return [...state]
         case Types.DELETE_CATEGORIES_IN_SV:
