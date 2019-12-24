@@ -35,7 +35,7 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
                 var active = match ? 'active' : '';
                 return (
                     <li className={active}>
-                        <Link className="menu_items" to={to}>
+                        <Link className="menu_items btn btn-dark" to={to}>
                             {label}
                         </Link>
                     </li>
@@ -47,6 +47,7 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 }
 
 class Menu extends React.Component {
+
     showMenus = (menu) => {
         var result = null;
         if (menu.length > 0) {
@@ -57,21 +58,55 @@ class Menu extends React.Component {
             })
         }
         return result;
+    };
+    logout = () => {
+        return sessionStorage.removeItem('TOKEN');
+
     }
+    checklogin = () => {
+        // console.log(sessionStorage.getItem('TOKEN'))
+        let result = null
+
+        if (sessionStorage.getItem('TOKEN')) {
+            return result = <li className="nav-item" >
+                <Link className="btn">Profile /</Link>
+                <Link to='' onClick={this.logout} className="btn" >Đăng xuất</Link>
+            </li >
+        } else {
+            return result = <li className="nav-item ">
+                <Link to={'/login'} className="btn btn-dark" >Đăng Nhập </Link>
+
+                <Link to={'/Registration'} className="btn  btn-dark">Đăng Ký</Link>
+            </li >
+            // confirm("Ban chua dang nhap");
+        }
+
+    }
+
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-                    {/* Brand/logo */}
+
+
+
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <Link className="navbar-brand" to="/">
                         <img src={logo} alt="logo" style={{ width: '40px' }} />
                     </Link>
-                    {/* Links */}
-                    <ul className="navbar-nav">
-                        {this.showMenus(menu)}
-                    </ul>
-                    <Link className="floatR navbar-brand cart--img"to="/giohang"></Link>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ">
+                            {this.showMenus(menu)}
+                            <li className="width200"></li>
+                            {this.checklogin()}
+                        </ul>
+
+                    </div>
+
                 </nav>
+
             </div>
         )
     }

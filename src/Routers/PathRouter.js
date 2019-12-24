@@ -17,6 +17,8 @@ import Order from '../Components/admin/Order/Order';
 import RegisterPage from '../Containers/user/registration';
 import Login from '../Containers/user/login'
 import Profile from '../Containers/user/profile'
+import Abouts from '../Containers/user/abouts'
+import LisProductView from '../Components/user/lisproduct';
 
 
 
@@ -121,6 +123,18 @@ export default class componentName extends Component {
                             layout={HomePage}
                             exact
                             component={Profile}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/products"
+                            layout={HomePage}
+                            exact
+                            component={LisProductView}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/about"
+                            layout={HomePage}
+                            exact
+                            component={Abouts}
                         ></AppRouter>
                     </Switch>
                 </Router>

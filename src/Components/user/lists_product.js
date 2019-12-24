@@ -9,13 +9,13 @@ class ListsProduct extends React.Component {
         // console.log(products.id);
         // let total;
         return (
-            <div className="items1">
-                <div className="card_items">
+            <div >
+                <div >
                     <Link to={`/ProductDetail/${products.id}`}>
                         <div className="items_img">
                             <img className="img_items" src={products.img} alt="product_item" />
                         </div>
-                        <div className="content_items">
+                        <div>
                             <p>{products.name}</p>
                             <h4>
                                 <ul className="review">

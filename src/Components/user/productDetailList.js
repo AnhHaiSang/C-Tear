@@ -84,13 +84,13 @@ class ProductDetailLists extends React.Component {
 
           <h1 style={{ color: "#e6ae48" }}>{products.price}<sup>$</sup></h1>
 
-          <hr style={{ margin: "10px 0 10px 0" }}></hr>
-          <div>{this.showReview(products.review)}</div>
+          <hr ></hr>
+          <h4>{this.showReview(products.review)}</h4>
 
-          <hr style={{ margin: "10px 0 0 0" }}></hr>
+          <hr ></hr>
           <div>
             <p style={{ fontSize: "20px" }} htmlFor="sel1">KÍCH CỠ</p>
-            <select style={{ width: "15%" }} className="form-control" id="sel1">
+            <select style={{ width: "20%" }} className="form-control" id="sel1">
               <option>To</option>
               <option>Vừa</option>
               <option>Nhỏ</option>

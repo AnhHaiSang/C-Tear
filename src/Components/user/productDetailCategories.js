@@ -8,11 +8,11 @@ class ProductDetailCategories extends React.Component {
  
     return (
       <div>
-        <div className="LineNewProduct" style={{marginTop:"2%",marginBottom:"2%"}}>
+        <div className="LineNewProduct" >
                 <h3>SẢN PHẨM LIÊN QUAN</h3>
                 <img src={title_dark} alt="title-dark"></img>              
             </div>
-        <table className="table" border="1" style={{width:"70%",margin:"auto" }}>
+        <table className="table main" border="1" >
           <tbody>
             <tr>  
               {this.showcategories(categories)}

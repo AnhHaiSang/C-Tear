@@ -18,7 +18,7 @@ class ContentProduct extends React.Component {
                         </div>
                         <div className="clr" />
                     </div>
-                </div>      
+                </div>     
             </div>
         )
     }

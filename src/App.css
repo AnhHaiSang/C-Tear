@@ -22,7 +22,7 @@ a {
   background-color: transparent;
 }
 
-a.menu_items {
+.menu_items {
   color: white;
   margin-left: 25px;
 }
@@ -43,6 +43,10 @@ img.slide_items {
 .clr{
   clear: both;
 }
+.width__100{
+  width:100;
+}
+.width200{width: 200px;}
 .background_product {
   background-image: url(./Image_Rudu/wine-1.jpg);
   background-repeat: no-repeat;
@@ -53,7 +57,8 @@ img.slide_items {
 }
 .card {
   width: 70%;
-  margin: 0 auto;
+  
+  margin: 1% 15% 15%;
   display: block !important;
   position: absolute;
   top: 15%;
@@ -80,11 +85,15 @@ img.img_pro1 {
 }
 .product_lists {
   width: 80%;
-  margin: 20px auto;
+  margin:auto;
+}
+.ContentProduct{
+  width: 90%;
+  margin: auto;
 }
 .LineNewProduct {
   text-align: center;
-  margin-top: 12%;
+  margin-top: 3%;
 }
 .lists_item1 {
   width: 70%;
@@ -103,7 +112,6 @@ ul.d-flex.flex-wrap {
 }
 li.list-group-item {
   width: 19%;
-  background-color: #fefe;
   padding: 1.7%;
   text-align: center;
   border-radius: 5px;
@@ -153,7 +161,9 @@ img.Image {
   border-top: 1px solid #fefe;
   background-color: #efefef;
 }
-
+.row {   
+  width: 205px;
+}
 footer.foooter_content {
   width: 80%;
   margin: 0% auto;
@@ -207,12 +217,8 @@ span.input-group-text {
 }
 .profiletext{
   text-align: center;
-}    
-
-
-
-
-
+}   
+.marginL{margin-left: 10%;}
 
 
 
@@ -223,17 +229,39 @@ span.input-group-text {
   color: black;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and   (min-width:768px) and (max-width:860px){
+  .LineNewProduct{
+    margin-top: 19%;
+  }
+  li.list-group-item{
+    width: 20%;
+    margin: 0 auto;  
+  }
+  .h1new{
+    font-size:10px;
+  }
+}
+@media screen and   (min-width:861px) and (max-width:1000px){
+  .LineNewProduct{
+    margin-top: 10%;
+  }
+  li.list-group-item{
+    width: 20%;
+    margin: 0 auto;  
+  }
+}
+@media screen and   (min-width:1254px) and (max-width:2000px){
+  .LineNewProduct{
+    margin-top: 12%;
+  }
+  li.list-group-item{
+    width: 20%;
+    margin: 0 auto;  
+  }
+}
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
   }
 }

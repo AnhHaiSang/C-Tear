@@ -9,7 +9,7 @@ class ProductDescrible extends React.Component {
                 <div className="container">
                 
                     {/* Nav tabs */}
-                    <ul className="nav nav-tabs" role="tablist" style={{ width: "85%", margin: "auto", textAlign: "center" }}>
+                    <ul className="nav nav-tabs" role="tablist" style={{ width: "85%", margin: "auto", textAlign: "center" ,paddingTop:"1%"}}>
                         <li className="nav-item">
                             <a className="nav-link active" data-toggle="tab" href="#home">ĐẶC ĐIỂM NỔI BẬT</a>
                         </li>
