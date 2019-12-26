@@ -145,7 +145,7 @@ export const editProducts = (products) => {
 // updete products
 export const actUpProductsRequest  = (products) => {
     return dispatch => {
-        return ApiCall (`loaisp/${products.id}`, 'PUT', products).then(res=>{
+        return ApiCall (`products/${products.id}`, 'PUT', products).then(res=>{
             dispatch(updateProducts(res.data))
         })
     }
@@ -154,5 +154,22 @@ export const updateProducts = (products) =>{
     return{
         type: Types.UPDATE_PRODUCTS_IN_SV,
         products
+    }
+}
+
+// --------------------Accout Action-------------
+//show categories
+export const showApiAccout = () => {
+    return dispatch => {
+        return ApiCall('users', 'GET', null).then(res => {
+            dispatch(showAcout(res.data));
+        });
+    };  
+}
+ 
+export const showAcout = (users) => {
+    return {
+        type: Types.SHOW_ACCOUT, 
+        users
     }
 }

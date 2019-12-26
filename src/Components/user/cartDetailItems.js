@@ -1,24 +1,37 @@
 import React, { Component } from 'react'
 
 export default class CartDetailItems extends Component {
+  
     render() {
-        console.log(this.props.cartItems);
-        let {img,name,price,soluong} = this.props.cartItems.product
+        // console.log(this.props);
+        let { product, count } = this.props.cartItems
+        let {cartItems} = this.props
         return (
-            <tr>
+            <tr className="text--align__center">
                 <th scope="row">
-                    <img src={img} className='img-fuilt' alt=""/>
+                    <img src={product.img} className="width__100" alt="" />
                 </th>
-                <td>{name}</td>
-                <td>{price}</td>
+                <td>{product.name}</td>
+                <td>{product.price}</td>
                 <td>
-                    <button>+</button>
-                    <input defaultValue={soluong} />
-                    <button>-</button>
+                    {count}
                 </td>
-                <td>{price}</td>
-                <td></td>
+                <td>{this.showMoney(product.price, count)}</td>
+                <td>
+                    <button  onClick={()=>this.delete(cartItems)} className="btn btn-dark">Xóa</button>
+                </td>
             </tr>
         )
+    }
+    delete(cartItems){
+        if(cartItems){
+            confirm("bạn có muốn xóa ko???"); //eslint-disable-line
+            this.props.delcart(cartItems);
+        }
+        
+    }
+    showMoney(price, count) {
+        var result = price * count;
+        return result
     }
 }

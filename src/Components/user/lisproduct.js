@@ -1,16 +1,8 @@
 import React from 'react';
-import ListsProduct from '../../Components/user/lists_product';
-import ProductLists from '../../Components/user/product_lists';
 import { connect } from 'react-redux';
+import ListsProduct from './lists_product';
 import * as action from '../../Actions/user/ActionUser';
-import PropTypes from 'prop-types';
-
-// container trung gian giữa redux và conponents, container sẽ lấy data ở store
-// container thực hiện nhiệm vụ kết nối (vd mapStateToProps)
-// sau đó container sẽ truyền data vào components 
-
-
-class ProductsContainer extends React.Component {
+class LisProductView extends React.Component {
     componentDidMount(){
         this.props.showProductsapi();
     }
@@ -19,9 +11,9 @@ class ProductsContainer extends React.Component {
         // console.log(this.props.products);
         
         return (
-                <ProductLists>
+            <ul className="flex-wrap">
                 {this.showProducts(products)}
-               </ProductLists>
+            </ul>
         )
     }
      // hàm này dùng để hiển thị danh sách sản phầm ở homepage
@@ -39,21 +31,6 @@ class ProductsContainer extends React.Component {
 }
 
 
-//check object trong products (cai state in ProductReducer)
-ProductsContainer.propTypes ={
-    products: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            img: PropTypes.string.isRequired,
-            price: PropTypes.number.isRequired,
-            inventory: PropTypes.number.isRequired,
-            review: PropTypes.number.isRequired,
-            description: PropTypes.string.isRequired,
-            CategorieId: PropTypes.number.isRequired
-
-        })
-    ).isRequired
-}
 
 const mapStateToProps = (state) => {
     // console.log(state.productsReducer.state);
@@ -69,4 +46,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductsContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(LisProductView)

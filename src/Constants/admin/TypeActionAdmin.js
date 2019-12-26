@@ -13,3 +13,5 @@ export const EDIT_PRODUCTS_IN_SV = 'EDIT_PRODUCTS_IN_SV';
 export const UPDATE_PRODUCTS_IN_SV = 'UPDATE_PRODUCTS_IN_SV';
 export const SHOW_PRODUCTS = 'SHOW_PRODUCTS';
 
+// ---------const Accout -----------
+export const SHOW_ACCOUT = 'SHOW_ACCOUT';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class ProductItem extends Component {
     render() {
@@ -7,8 +7,10 @@ export default class ProductItem extends Component {
         return (
             <tr>
                 <td>{this.props.index + 1}</td>
-                <td style={{width:"12%"}}>{name} </td>
-                <td style={{width:"20%"}}><img className="image-products-admin" src={img} alt={name}/> </td>
+                <td style={{ width: "12%" }}>{name} </td>
+                <td style={{ width: "20%" }}>
+                    <img className="image-products-admin" src={img} alt={name} />
+                </td>
                 <td>{inventory}</td>
                 <td>{review}</td>
                 <td>{description}</td>
@@ -20,7 +22,7 @@ export default class ProductItem extends Component {
                         Sửa
                     </Link>
                     <button
-                        onClick={()=>this.deleteProduts(id)}
+                        onClick={() => this.deleteProduts(id)}
                         type="button"
                         className="btn btn-secondary">
                         Xóa
@@ -29,7 +31,7 @@ export default class ProductItem extends Component {
             </tr>
         )
     }
-    deleteProduts=(id)=>{
+    deleteProduts = (id) => {
         if (confirm('Bạn chắc chắn muốn xóa ?')) { //eslint-disable-line
             this.props.delProducts(id);
         }

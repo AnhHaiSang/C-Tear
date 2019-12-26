@@ -58,7 +58,7 @@ class RegisterPage extends React.Component {
 
     render() {
         return (
-            <div className="main">
+            <div className="login">
                 <Link to="/login" className="btn btn-dark" style={{ float: "right" }}>ĐĂNG NHẬP</Link>
                 <h2>ĐĂNG KÝ</h2>
                 <div style={{ height: '50 px' }}>
@@ -105,10 +105,10 @@ class RegisterPage extends React.Component {
                             </label>
                             </div>
                         </div> */}
-                        <div className="form-group" style={{ paddingTop: "0" }}>
-                            <button className="btn btn-primary" onClick={this.onSubmitUser}>ĐĂNG KÝ</button>
+                        <div className="form-group">
+                            <button className="btn btn-dark " onClick={this.onSubmitUser}>ĐĂNG KÝ</button>
 
-                            <Link to="/" className="btn btn-link">HỦY</Link>
+                            <Link to="/" className="btn btn-default">HỦY</Link>
                         </div>
                     </form>
 

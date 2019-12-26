@@ -8,13 +8,19 @@ import Error404 from '../Pages/admin/ErrorPage/Error404';
 import ProductsContainer from '../Containers/user/ProductsContainer';
 import CartContainer from '../Containers/user/CartContainer';
 import DetailContainer from '../Containers/user/detailContainer';
-import ProductsContainerAdmin from '../Containers/admin/ProductsContainerAdmin';
 import CatelogyActionPage from '../Pages/admin/CatelogyActionPage/CatelogyActionPage';
 import CategoriesContainer from '../Containers/admin/CategoriesContainer';
-import ChartAdmin from '../Components/admin/ChartAdmin/ChartAdmin';
-import AccoutUser from '../Components/admin/AccoutUser/AccoutUser';
 import Order from '../Components/admin/Order/Order';
+import RegisterPage from '../Containers/user/registration';
+import Login from '../Containers/user/login'
+import Profile from '../Containers/user/profile'
+import Abouts from '../Containers/user/abouts'
+import LisProductView from '../Components/user/lisproduct';
+import ProductsContainerAdmin from '../Containers/admin/ProductsContainerAdmin';
+import ChartAdmin from '../Components/admin/ChartAdmin/ChartAdmin';
 import ProductsActionPage from '../Pages/admin/ProductActionPage/ProductsActionPage';
+import AccoutContainerUser from '../Containers/admin/AccoutContainer';
+
 
 
 
@@ -24,7 +30,7 @@ export default class componentName extends Component {
             
                 <Router>
                     <Switch>
-                        <AppRouter
+                    <AppRouter
                             path="/admin"
                             layout={HomePageAdmin}
                             exact
@@ -79,7 +85,7 @@ export default class componentName extends Component {
                             path="/admin/accout"
                             layout={HomePageAdmin}
                             exact
-                            component={AccoutUser}
+                            component={AccoutContainerUser}
                         >  
                         </AppRouter>
                         <AppRouter
@@ -117,10 +123,40 @@ export default class componentName extends Component {
                             component={DetailContainer}
                         ></AppRouter>
                         <AppRouter
-                            path=""
-                            layout={Error404}
+                            path="/Registration"
+                            layout={HomePage}
                             exact
-                            component
+                            component={RegisterPage}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/Login"
+                            layout={HomePage}
+                            exact
+                            component={Login}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/Profile"
+                            layout={HomePage}
+                            exact
+                            component={Profile}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/products"
+                            layout={HomePage}
+                            exact
+                            component={LisProductView}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/about"
+                            layout={HomePage}
+                            exact
+                            component={Abouts}
+                        ></AppRouter>
+                        <AppRouter
+                            path="/"
+                            layout={HomePage}
+                            exact
+                            component={Error404}
                         ></AppRouter>
                     </Switch>
                 </Router>

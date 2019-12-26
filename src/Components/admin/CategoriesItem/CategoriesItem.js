@@ -17,7 +17,7 @@ class CategoriesItem extends Component {
                         {statusName}
                     </span>
                 </td>
-                <td> 
+                <td>
                     <Link 
                         to={`/admin/categories/edit/${id}`}
                         className="btn btn-primary mr-10">

@@ -62,6 +62,7 @@ div#undefined{
 }
 img.image-products-admin {
     width: 70%;
+    height: 250px;
 }
 .table-dark td, .table-dark th, .table-dark thead th {
     border-color: #f7f7f7;

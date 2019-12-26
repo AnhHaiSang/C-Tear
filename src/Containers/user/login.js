@@ -34,7 +34,7 @@ class Login extends React.Component {
         users.forEach(eachRow => {
             if (email === eachRow['email'] && password === eachRow['password']) {
                 history.push('/');
-                sessionStorage.setItem('TOKEN',JSON.stringify(email));
+                sessionStorage.setItem('TOKEN',email);
             }
         });
         return 'Incorrected'
@@ -66,7 +66,7 @@ class Login extends React.Component {
         // console.log(this.state);
 
         return (
-            <div className="main">
+            <div className="login">
                 <Link to="/Registration" className="btn btn-dark" style={{ float: "right" }}>ĐĂNG KÝ</Link>
                 <h2>ĐĂNG NHẬP</h2>
                 <div style={{ height: '50 px' }}>
@@ -94,9 +94,9 @@ class Login extends React.Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <div className="col-sm-offset-2 col-sm-10">
-                                <button type="button" className="btn btn-primary" onClick={this.onLogin}>Submit</button>
-                                <Link to="/" className="btn btn-link">HỦY</Link>
+                            <div>
+                                <button type="button" className="btn btn-dark" onClick={this.onLogin}>Submit</button>
+                                <Link to="/" className="btn btn-default">HỦY</Link>
                             </div>
                         </div>
                     </form>

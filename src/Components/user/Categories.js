@@ -9,7 +9,7 @@ export default class Categories extends Component {
             <td>
                 <a href={`/ProductDetail/${item.id}`}>
                     <div>
-                        <img style={{ width: "100%" }} src={item.img} alt="No IMG" />
+                        <img className="width__100" src={item.img} alt="No IMG" />
                     </div>
                     <div className="content_items">
                         <p>{item.name}</p>

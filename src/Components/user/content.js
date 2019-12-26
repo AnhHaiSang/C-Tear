@@ -13,6 +13,7 @@ class Content extends React.Component {
                 <LineNewProduct />
                 <ProductsContainer/>
                 <ImageProduct />
+                <LineNewProduct />
                 <ProductsContainer/>
             </div>
         )
