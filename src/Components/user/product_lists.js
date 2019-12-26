@@ -1,5 +1,4 @@
 import React from 'react';
-// import product1 from './../img/Image_Product/product1.jpg';
 
 class ProductLists extends React.Component {
     render() {

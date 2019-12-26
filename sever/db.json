@@ -9,332 +9,362 @@
   "users": [
     {
       "id": 1,
-      "fisrt name": "json",
-      "last name": "code",
+      "fisrtname": "json1",
+      "lastname": "code1",
       "password": "123",
-      "re-password": "123",
+      "repassword": "123",
       "email": "email1",
-      "phone": "number"
+      "phone": "number1",
+      "address": "address"
+    },
+    {
+      "id": 2,
+      "fisrtname": "json2",
+      "lastname": "code2",
+      "password": "123",
+      "repassword": "123",
+      "email": "email2",
+      "phone": "number2",
+      "address": "address"
+    },
+    {
+      "id": 3,
+      "fisrtname": "json3",
+      "lastname": "code3",
+      "password": "123",
+      "repassword": "123",
+      "email": "email3",
+      "phone": "number3",
+      "address": "address"
     }
   ],
   "products": [
     {
       "id": 1,
-      " name": "Rượu Vang 50 Anniversario",
-      "img": "../Product/product1.jpg",
+      "name": "RƯỢU VANG 50 ANNIVERSARIO",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product1_say0eu.jpg",
       "price": 165,
       "inventory": 69,
       "review": 4,
       "description": "",
-      "quantity": 2,
-      "CategorieId": 1
+      "loaispId": 1
     },
     {
       "id": 2,
       "name": "RƯỢU VANG 60 SESSANTANNI LIMITED EDITION",
-      "price": "$165",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product2_rlyuco.jpg",
+      "price": 165,
       "inventory": 34,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 3,
       "name": "RƯỢU VANG 62 ANNIVERSARIO",
-      "price": "$165",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product3_rbafgc.jpg",
+      "price": 165,
       "inventory": 51,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 4,
       "name": "RƯỢU VANG ANIMA DI NEGROAMARO",
-      "price": "$185",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product4_j55gc8.jpg",
+      "price": 185,
       "inventory": 50,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 5,
       "name": "RƯỢU VANG F LIMITED",
-      "price": "$300",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product5_tanghy.jpg",
+      "price": 300,
       "inventory": 45,
       "review": 5,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 6,
       "name": "RƯỢU VANG F NEGROAMARO SAN MARZANO",
-      "price": "$450",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product6_bslkwk.jpg",
+      "price": 450,
       "inventory": 15,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 7,
       "name": "RƯỢU VANG M LIMITED EDITION MERLOT SALENTO",
-      "price": "$500",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product7_ncilxr.jpg",
+      "price": 500,
       "inventory": 23,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 8,
       "name": "RƯỢU VANG M MALVASIA NERA",
-      "price": "$500",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product8_jkz5u4.jpg",
+      "price": 500,
       "inventory": 24,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 9,
       "name": "RƯỢU VANG TALO NEGROAMARO",
-      "price": "$750",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product9_ukivqq.jpg",
+      "price": 750,
       "inventory": 14,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 10,
       "name": "RƯỢU VANG IL PUMO NEGROAMARO 100 YEARS",
-      "price": "$1000",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product10_oztw10.jpg",
+      "price": 100,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 1
+      "loaispId": 1
     },
     {
       "id": 11,
       "name": "VANG TRẮNG MỸ SUTTER HOME SAUVIGNON BLANC ",
-      "price": "$300",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product11_j2kzqt.jpg",
+      "price": 300,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 12,
       "name": "RƯỢU VANG PHÁP DOMAINE FAIVELEY MEURSAULT",
-      "price": "$500",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product12_zcaqu2.jpg",
+      "price": 500,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 13,
       "name": "RƯỢU VANG DOMAINE FAIVELEY CORTON-CHARLEMAGNE GRAND CRU",
-      "price": "$550",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332460/products/product13_bgt3vw.jpg",
+      "price": 550,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 14,
       "name": "RƯỢU VANG PHÁP DOMAINE FAIVELEY BOURGOGNE",
-      "price": "$560",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product14_jyuazx.jpg",
+      "price": 560,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 15,
       "name": "RƯỢU VANG TRẮNG PHÁP YVON MAU COLOMBARD",
-      "price": "$600",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product15_lyar7v.jpg",
+      "price": 600,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 16,
       "name": "RƯỢU VANG PAULLORRY CHARDONNAY",
-      "price": "$620",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product16_vc9nch.jpg",
+      "price": 620,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 17,
       "name": "RƯỢU VANG CASAS DEL TOQUI SINGLE ESTATE SAUVIGNON BLANC",
-      "price": "$700",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product17_qxut4x.jpg",
+      "price": 700,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 18,
       "name": "RƯỢU VANG CASAS DEL TOQUI RESERVA CHARDONNAY",
-      "price": "$800",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product18_b61nhb.jpg",
+      "price": 800,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 19,
       "name": "RƯỢU VANG TRẮNG CHILE OCHAGAVIA SILVESTRE SAUVIGNON BLANC",
-      "price": "$920",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product19_gh4nso.png",
+      "price": 920,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 20,
       "name": "RƯỢU VANG MUSSEL BAY SAUVIGNON BLANC MARLBOROUGH",
-      "price": "$1000",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332461/products/product20_zu3uks.jpg",
+      "price": 100,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 2
+      "loaispId": 2
     },
     {
       "id": 21,
       "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “PREMIERE CUVEE”",
-      "price": "$200",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product21_puyt7c.jpg",
+      "price": 200,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 22,
       "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “RESERVE PRIVEE”",
-      "price": "$210",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product22_rpvxbq.jpg",
+      "price": 210,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 23,
       "name": "RƯỢU CHAMPAGNE BRUT ASSEMBLAGE",
-      "price": "$250",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product23_mvrd0g.jpg",
+      "price": 250,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 24,
       "name": "RƯỢU CHAMPAGNE BRUNO PAILLARD BRUT “BLANC DE BLANC”",
-      "price": "$250",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product24_benkmw.jpg",
+      "price": 250,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 25,
       "name": "RƯỢU CHAMPAGNE MOET & CHANDON – ICE IMPERIAL",
-      "price": "$500",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product25_wsg0q5.jpg",
+      "price": 500,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 26,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT CUVVE RENE",
-      "price": "$800",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product26_pgguh7.jpg",
+      "price": 800,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 27,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT L’AUTHENTIQUE",
-      "price": "$800",
+      "img": "../Product/product1.jpg",
+      "price": 800,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 28,
       "name": "RƯỢU CHAMPAGNE TRIBAUT SCHLOESSER BRUT ORIGINE",
-      "price": "$900",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product28_s2oqko.jpg",
+      "price": 900,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 29,
       "name": "RƯỢU CHAMPAGNE GOSSET BRUT EXCELLENCE",
-      "price": "$1000",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332462/products/product29_kkyvkm.jpg",
+      "price": 100,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
     },
     {
       "id": 30,
       "name": "RƯỢU CHAMPAGNE DOM PERIGNON ROSE",
-      "price": "$1000",
+      "img": "https://res.cloudinary.com/sangco1997/image/upload/v1577332463/products/product30_mjhc26.jpg",
+      "price": 100,
       "inventory": 10,
-      "review": 5,
+      "review": 4,
       "description": "",
-      "quantity": 2,
-      "categorieId": 3
+      "loaispId": 3
+    },
+    {
+      "name": "ruoi j do",
+      "img": "anh j do",
+      "price": "gia tien j do",
+      "inventory": "con nhiu do",
+      "review": "may sao do",
+      "description": "noi dung j do",
+      "loaispId": "1",
+      "id": 31
     }
   ],
-  "Categories": [
-    {
-      "id": 1,
-      "name": "wine red",
-      "status": "1"
-    },
+  "loaisp": [
     {
       "id": 2,
       "name": "wine white",
-      "status": "1"
+      "status": true
     },
     {
       "id": 3,
       "name": "wine champagne",
-      "status": "1"
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "wine champagne 12",
+      "status": true
     }
   ],
   "orders": [
@@ -345,15 +375,87 @@
       "status_ship": "",
       "created_at": "",
       "total_price": ""
+    },
+    {
+      "id": 2,
+      "information": {
+        "email": "123",
+        "name": "123",
+        "address": "123",
+        "phone": "123",
+        "ngaytao": "2019-12-21T08:10:13.732Z",
+        "tinhtrang": "abs"
+      },
+      "cartItems": [
+        {
+          "product": {
+            "id": 21,
+            "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “PREMIERE CUVEE”",
+            "img": "../Product/product1.jpg",
+            "price": 200,
+            "inventory": 10,
+            "review": 5,
+            "description": "",
+            "loaispId": 3
+          },
+          "count": 5
+        },
+        {
+          "product": {
+            "id": 22,
+            "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “RESERVE PRIVEE”",
+            "img": "../Product/product1.jpg",
+            "price": 210,
+            "inventory": 10,
+            "review": 5,
+            "description": "",
+            "loaispId": 3
+          },
+          "count": 2
+        }
+      ],
+      "total": 1420
+    },
+    {
+      "id": 3,
+      "information": {
+        "email": "1",
+        "name": "123",
+        "address": "123",
+        "phone": "123",
+        "ngaytao": "2019-12-21T08:10:13.732Z",
+        "tinhtrang": "abs"
+      },
+      "cartItems": [
+        {
+          "product": {
+            "id": 21,
+            "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “PREMIERE CUVEE”",
+            "img": "../Product/product1.jpg",
+            "price": 200,
+            "inventory": 10,
+            "review": 5,
+            "description": "",
+            "loaispId": 3
+          },
+          "count": 5
+        },
+        {
+          "product": {
+            "id": 22,
+            "name": "RƯỢU CHAMPAGNE BRUNO PAOLLARD “RESERVE PRIVEE”",
+            "img": "../Product/product1.jpg",
+            "price": 210,
+            "inventory": 10,
+            "review": 5,
+            "description": "",
+            "loaispId": 3
+          },
+          "count": 2
+        }
+      ],
+      "total": 1420
     }
   ],
-  "order_details": [
-    {
-      "id": 1,
-      "productID": "",
-      "amount": "number",
-      "orderId": "",
-      "detail_price": ""
-    }
-  ]
+  "order_details": []
 }

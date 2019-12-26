@@ -5,41 +5,34 @@ import { Link } from 'react-router-dom';
 
 class ListsProduct extends React.Component {
     render() {
-        var { products} = this.props;
-        // console.log(products);
+        var { products } = this.props;
+        console.log(this.props.products);
+        // let total;
         return (
-            <div className="items1">
-                <div className="card_items">
-                    <Link to="/">
-                        <div className="items_img">
-                            <img className="img_items" src={products.img} alt="product_item" />
-                        </div>
-                        <div className="content_items">
-                            <p>{products.name}</p>
-                            <h4>
-                                <ul className="review">
-                                    <li className="star">
-                                        {this.showReview(products.review)}
-                                    </li>
-                                </ul>
-                            </h4>
-                            <p className="price">${products.price}</p>
-                        </div>
-                        <div className="button_items">
-                            <button onClick={() => this.onAddToCart(products)} type="button" className="btn btn-primary">Add to Cart</button>
-                        </div>
-
-                        <div className="clr"></div>
-                    </Link>
+            <Link to={`/ProductDetail/${products.id}`}>
+                <div className="items_img">
+                    <img className="img_items" src={products.img} alt="product_item" />
                 </div>
-            </div>
- 
-        ) 
-    }  
-    onAddToCart = (product) => {   
-        this.props.onAddToCart(product);
+                <div className="content-detail">
+                    <div className="name-products">
+                        <p>{products.name}</p>
+                    </div>
+                    <h3 className="div-review">
+                        <ul className="review">
+                            <li className="star">
+                                {this.showReview(products.review)}
+                            </li>
+                        </ul>
+                    </h3>
+                    <div className="div-price">
+                        <h4 className="price">${products.price}</h4>
+                    </div>
+                </div>
+                <button className="btn btn-success">Xem Thêm</button>
+            </Link>
+        )
     }
-    
+
     showReview(review) {
         var result = [];
         for (var i = 1; i <= review; i++) {

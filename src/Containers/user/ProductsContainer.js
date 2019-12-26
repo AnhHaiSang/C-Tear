@@ -11,30 +11,27 @@ import PropTypes from 'prop-types';
 
 
 class ProductsContainer extends React.Component {
+    componentDidMount(){
+        this.props.showProductsapi();
+    }
     render() {
-        var { products } = this.props; // console.log(products);
+        var {products} = this.props;
+        // console.log(this.props.products);
+        
         return (
-            <div>
-                {/* conponent danh sách sản phẩm */} 
                 <ProductLists>
-                    {this.showProducts(products)}
-                </ProductLists>
-            </div>
+                {this.showProducts(products)}
+               </ProductLists>
         )
     }
-    // hàm này dùng để hiển thị danh sách sản phầm ở homepage
-    showProducts(products) {
-        let { onAddToCart } = this.props;
+     // hàm này dùng để hiển thị danh sách sản phầm ở homepage
+     showProducts(products) {  
         var result = null;
-        if (products.length > 0) {
+        if(products.length > 0 ){
             result = products.map((products, index) => {
-                return <li key={index} className="list-group-item">
-                    <ListsProduct 
-                    key={index} 
-                    products={products} 
-                    onAddToCart={onAddToCart} />
-                </li>;
-
+                return  <li key={index} className="list-group-item">
+                            <ListsProduct key={index} products={products}/>
+                        </li>;
             });
         }
         return result;
@@ -43,7 +40,7 @@ class ProductsContainer extends React.Component {
 
 
 //check object trong products (cai state in ProductReducer)
-ProductsContainer.propTypes = {
+ProductsContainer.propTypes ={
     products: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
@@ -52,21 +49,22 @@ ProductsContainer.propTypes = {
             inventory: PropTypes.number.isRequired,
             review: PropTypes.number.isRequired,
             description: PropTypes.string.isRequired,
-            CategorieId: PropTypes.number.isRequired 
+            CategorieId: PropTypes.number.isRequired
 
         })
     ).isRequired
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
+    // console.log(state.productsReducer.state);
     return {
         products: state.productsReducer  //(productsReducer) trong file index trong reducer
     }
 }
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        onAddToCart: (product) => {
-            dispatch(action.actAddToCart(product, 1))
+        showProductsapi: ()=>{
+            dispatch(action.showapiproduct()) 
         }
     }
 }

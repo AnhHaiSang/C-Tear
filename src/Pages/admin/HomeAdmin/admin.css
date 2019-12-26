@@ -1,0 +1,74 @@
+
+.ml-10{
+    margin-left: 10px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.h4-name-team{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.container-fluid{
+    padding: 0 !important
+    
+}
+th, td{
+    text-align: center;
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #454d55;
+    text-align: center;
+}
+.row {
+    margin: 0px !important;
+}
+.col-sm-3.sidenav {
+    color: white;
+}
+.col-sm-3 {
+    flex: 0 0 100% !important;
+   max-width: 100%  !important;
+}
+.navbar {
+    padding: 0px !important;
+}
+div#undefined{
+    margin: 5% auto !important;
+    width: 80% !important;
+}
+.div-from-products {
+    width: 60%;
+    margin: 3% auto;
+    margin-top: 3%;
+}
+.pr {
+    padding-right: 50%;
+}
+.div-form-categories {
+    width: 50%;
+    margin: 3% auto;
+}
+.free-size{
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
+}
+img.image-products-admin {
+    width: 70%;
+    height: 250px;
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #f7f7f7;
+    border-right: 1px solid;
+}
+span.input-group-text {
+    padding: 3px;
+    width: 90px;
+}
