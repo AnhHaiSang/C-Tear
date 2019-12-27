@@ -97,7 +97,6 @@ class CartContainer extends Component {
             result = "#myModal"
         } else {
             history.push('/login');
-            // confirm("Ban chua dang nhap");
         }
         return result;
     }
@@ -128,9 +127,9 @@ class CartContainer extends Component {
                                                 <input type="number" className="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" onChange={this.handOnChange} defaultValue={item.phone} />
                                             </div>
                                             <div className="form-group col-md-6">
-                                                <label htmlFor="email">Hinh thuc thanh toan</label>
+                                                <label htmlFor="email">HÌNH THỨC THANH TOÁN</label>
                                                 <select className="form-control" id="" name="" disabled="disabled">
-                                                    <option>thanh toan truc tiep</option>
+                                                    <option>Thanh toán khi nhận hàng</option>
                                                     <option>2</option>
                                                     <option>3</option>
                                                     <option>4</option>
@@ -150,7 +149,7 @@ class CartContainer extends Component {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="submit" className="btn btn-dark" >Submit</button>
+                                    <button type="submit" className="btn btn-dark" >THANH TOÁN</button>
                                 </div>
                             </form>
                         </div>

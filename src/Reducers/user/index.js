@@ -7,6 +7,9 @@ import EditItem from '../admin/EditItem';
 import UserReducer from '../user/UserReducer';
 import BillReducer from './BillReducers';
 import ProfileReducer from './ProfileReducer';
+import ProductsReducerAdmin from '../admin/ProductsReducerAdmin';
+import EditProductsItem from '../admin/EditProductsItem';
+import AccoutReducerAdmin from '../admin/AccoutReducer';
 
 const appReducers = combineReducers({
     productsReducer,
@@ -16,7 +19,10 @@ const appReducers = combineReducers({
     categoriesReducer,
     UserReducer,
     ProfileReducer,
-    BillReducer
+    BillReducer,
+    ProductsReducerAdmin,
+    EditProductsItem,
+    AccoutReducerAdmin
     
 })
 export default appReducers;

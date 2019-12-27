@@ -6,7 +6,7 @@ class Abouts extends React.Component {
             <div className="main">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://vtv1.mediacdn.vn/thumb_w/650/2019/2/13/ruou130219-1550042051732792044228.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -17,7 +17,7 @@ class Abouts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="http://tranhtreotuonghanoi.com/wp-content/uploads/2017/11/tranh-ly-ruou-va-chum-nho-amia-659-treo-tuong-phong-an.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -28,7 +28,7 @@ class Abouts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="http://www.phanphoiruouvang.com/images/jarossebanner.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -41,7 +41,7 @@ class Abouts extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://c.wallhere.com/photos/70/e1/wine_wine_glasses_bottle-595563.jpg!d" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -51,7 +51,7 @@ class Abouts extends React.Component {
                                     <a href="#" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://znews-photo.zadn.vn/w660/Uploaded/ofh_cgkztmzt/2018_12_23/VineVeraNYWineBars.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -61,7 +61,7 @@ class Abouts extends React.Component {
                                     <a href="#" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://decopro.vn/wp-content/uploads/2018/04/Ke-de-ruou-dong-ho-thieu-nu-4.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -73,7 +73,7 @@ class Abouts extends React.Component {
                             </div></div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://baoquocte.vn/stores/news_dataimages/anbui/082017/31/15/153441_SGWV-Art-State-of-the-Wine-2015-Q2-wine-industry-outlook-and-highlights-1.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -83,7 +83,7 @@ class Abouts extends React.Component {
                                     <a href="#" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="http://sc01.alicdn.com/kf/UTB8eJQMC8ahduJk43Ja762M8FXa7/Italian-Products-Selection-Wine-bottles-from-Tuscany.png" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">
@@ -93,7 +93,7 @@ class Abouts extends React.Component {
                                     <a href="#" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-12">
                             <div className="card" style={{ width: '18rem' }}>
                                 <img src="https://namlimxanh.vn/wp-content/uploads/2018/04/phan-loai-ruou-nho-700x394.jpg" className="card-img-top" alt="Vang Thăng Long" />
                                 <div className="card-body">

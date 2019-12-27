@@ -7,10 +7,11 @@ export default class Categories extends Component {
         let { item } = this.props;
         return (
             <td>
+
                 <a href={`/ProductDetail/${item.id}`}>
-                    <div>
-                        <img className="width__100" src={item.img} alt="No IMG" />
-                    </div>
+
+                    <img src={item.img} className="width__100" />
+
                     <div className="content_items">
                         <p>{item.name}</p>
                         <h4>

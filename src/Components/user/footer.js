@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 class Footer extends React.Component {
     render() {
         return (
-            <div className="footer">
-                <footer className="foooter_content">
+            <footer className="footer">
+                <div className="foooter_content">
                     <div className="info lists_footer">
                         <div className="header_items_footer">
                             <h4>THÔNG TIN</h4>
@@ -40,9 +40,7 @@ class Footer extends React.Component {
                                 <label htmlFor="demo">Gửi email cho chúng tôi để đc hỗ trợ</label>
                                 <div className="input-group mb-3">
                                     <input type="text" className="form-control" placeholder="Email của bạn" id="demo" name="email" />
-                                    <div className="input-group-append">
-                                        <span className="input-group-text">Send</span>
-                                    </div>
+                                    <button type="email"id="mailbutton" class="btn-primary">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -52,8 +50,8 @@ class Footer extends React.Component {
                         <p>Contact information: <Link to="/mailto:someone@example.com">
                             someone@example.com</Link >.</p>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         )
     }
 }

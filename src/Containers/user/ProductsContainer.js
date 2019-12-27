@@ -19,12 +19,9 @@ class ProductsContainer extends React.Component {
         // console.log(this.props.products);
         
         return (
-            <div>
-                {/* conponent danh sách sản phẩm */}
                 <ProductLists>
                 {this.showProducts(products)}
                </ProductLists>
-            </div>
         )
     }
      // hàm này dùng để hiển thị danh sách sản phầm ở homepage

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class CartDetailItems extends Component {
-  
+
     render() {
-        // console.log(this.props);
+        console.log(this.props);
         let { product, count } = this.props.cartItems
-        let {cartItems} = this.props
+        let { cartItems } = this.props
+
         return (
             <tr className="text--align__center">
                 <th scope="row">
@@ -18,17 +20,22 @@ export default class CartDetailItems extends Component {
                 </td>
                 <td>{this.showMoney(product.price, count)}</td>
                 <td>
-                    <button  onClick={()=>this.delete(cartItems)} className="btn btn-dark">Xóa</button>
+                    <button onClick={() => this.delete(cartItems)} className="btn btn-dark">Xóa</button>
                 </td>
             </tr>
         )
     }
-    delete(cartItems){
-        if(cartItems){
-            confirm("bạn có muốn xóa ko???"); //eslint-disable-line
-            this.props.delcart(cartItems);
+    delete(cartItems) {
+        let result = false;
+        if (confirm("bạn có muốn xóa ko???"//eslint-disable-line
+        )) {
+            return result = this.props.delcart(cartItems);
         }
-        
+        else {
+            return result
+        }
+
+
     }
     showMoney(price, count) {
         var result = price * count;

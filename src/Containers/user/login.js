@@ -33,8 +33,13 @@ class Login extends React.Component {
         let { users, history } = this.props;
         users.forEach(eachRow => {
             if (email === eachRow['email'] && password === eachRow['password']) {
-                history.push('/');
-                sessionStorage.setItem('TOKEN',email);
+                if (localStorage.getItem('HISTORY')) {
+                    history.push(localStorage.getItem('HISTORY'));
+                    sessionStorage.setItem('TOKEN', email);
+                } else {
+                    history.push('/');
+                    sessionStorage.setItem('TOKEN', email);
+                }
             }
         });
         return 'Incorrected'
@@ -67,7 +72,6 @@ class Login extends React.Component {
 
         return (
             <div className="login">
-                <Link to="/Registration" className="btn btn-dark" style={{ float: "right" }}>ĐĂNG KÝ</Link>
                 <h2>ĐĂNG NHẬP</h2>
                 <div style={{ height: '50 px' }}>
                     <img src="../Image_Rudu/titleleft-dark.png" alt="giohang" />
@@ -84,13 +88,6 @@ class Login extends React.Component {
                             <label htmlFor="password">MẬT KHẨU:</label>
                             <div>
                                 <input type="password" className="form-control" id="password" placeholder="Nhập mật khẩu" name="password" onChange={this.handOnChange} />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-sm-offset-2 col-sm-10">
-                                <div className="checkbox">
-                                    <label><input type="checkbox" name="remember" />Lưu đăng nhập</label>
-                                </div>
                             </div>
                         </div>
                         <div className="form-group">

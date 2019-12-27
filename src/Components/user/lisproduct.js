@@ -11,12 +11,9 @@ class LisProductView extends React.Component {
         // console.log(this.props.products);
         
         return (
-            <div>
-                {/* conponent danh sách sản phẩm */}
-          
+            <ul className="flex-wrap">
                 {this.showProducts(products)}
-               
-            </div>
+            </ul>
         )
     }
      // hàm này dùng để hiển thị danh sách sản phầm ở homepage
