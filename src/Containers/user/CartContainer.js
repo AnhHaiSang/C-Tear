@@ -103,60 +103,62 @@ class CartContainer extends Component {
     ShowProfile = (users) => {
         let { cartItems } = this.props;
         let result = null;
-        if (users.length > 0) {
-            result = users.map((item, index) => {
-                return (<div className="modal fade" id="myModal" role="dialog" key={index} >
-                    <div className="modal-dialog modal-lg">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h4 className="modal-title">BILL</h4>
-                                <button type="button" className="close" data-dismiss="modal">×</button>
+        if (cartItems.length > 0) {
+            if (users.length > 0) {
+                result = users.map((item, index) => {
+                    return (<div className="modal fade" id="myModal" role="dialog" key={index} >
+                        <div className="modal-dialog modal-lg">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h4 className="modal-title">BILL</h4>
+                                    <button type="button" className="close" data-dismiss="modal">×</button>
 
-                            </div>
-                            <form onSubmit={this.onBill}>
-                                <div className="modal-body">
-                                    <div className="container">
+                                </div>
+                                <form onSubmit={this.onBill}>
+                                    <div className="modal-body">
+                                        <div className="container">
 
-                                        <div>
-                                            <label htmlFor="name">HỌ VÀ TÊN</label>
-                                            <input type="text" className="form-control" name="name" placeholder="Nhập họ tên" onChange={this.handOnChange} defaultValue={item.name} />
-                                        </div>
-                                        <div className="form-row">
-                                            <div className="form-group col-md-6">
-                                                <label htmlFor="phone">SỐ ĐIỆN THOẠI</label>
-                                                <input type="number" className="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" onChange={this.handOnChange} defaultValue={item.phone} />
+                                            <div>
+                                                <label htmlFor="name">HỌ VÀ TÊN</label>
+                                                <input type="text" className="form-control" name="name" placeholder="Nhập họ tên" onChange={this.handOnChange} defaultValue={item.name} />
                                             </div>
-                                            <div className="form-group col-md-6">
-                                                <label htmlFor="email">HÌNH THỨC THANH TOÁN</label>
-                                                <select className="form-control" id="" name="" disabled="disabled">
-                                                    <option>Thanh toán khi nhận hàng</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                </select>
+                                            <div className="form-row">
+                                                <div className="form-group col-md-6">
+                                                    <label htmlFor="phone">SỐ ĐIỆN THOẠI</label>
+                                                    <input type="number" className="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" onChange={this.handOnChange} defaultValue={item.phone} />
+                                                </div>
+                                                <div className="form-group col-md-6">
+                                                    <label htmlFor="email">HÌNH THỨC THANH TOÁN</label>
+                                                    <select className="form-control" id="" name="" disabled="disabled">
+                                                        <option>Thanh toán khi nhận hàng</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="address">ĐỊA CHỈ</label>
-                                            <input type="text" className="form-control" id="address" name="address" placeholder="Nhập địa chỉ" onChange={this.handOnChange} defaultValue={item.address} />
-                                        </div>
-                                        <div className="form-group" style={{ float: "right" }}>
-                                            <p>Tổng Tiền: <span className="text-danger">{this.showTotal(cartItems)}$</span> </p>
+                                            <div className="form-group">
+                                                <label htmlFor="address">ĐỊA CHỈ</label>
+                                                <input type="text" className="form-control" id="address" name="address" placeholder="Nhập địa chỉ" onChange={this.handOnChange} defaultValue={item.address} />
+                                            </div>
+                                            <div className="form-group" style={{ float: "right" }}>
+                                                <p>Tổng Tiền: <span className="text-danger">{this.showTotal(cartItems)}$</span> </p>
+                                            </div>
+
                                         </div>
 
                                     </div>
-
-                                </div>
-                                <div className="modal-footer">
-                                    <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="submit" className="btn btn-dark" >THANH TOÁN</button>
-                                </div>
-                            </form>
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="submit" className="btn btn-dark" >THANH TOÁN</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                )
-            });
+                    )
+                });
+            }
         }
         return result;
     }

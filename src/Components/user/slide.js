@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 class Slide extends React.Component {
     render(){
         return(
-            <div className="slide">
+            <section className="slide">
                 <div id="demo" className="carousel slide" data-ride="carousel">
                     {/* Indicators */}
                     <ul className="carousel-indicators">
@@ -38,7 +38,7 @@ class Slide extends React.Component {
                         <span className="carousel-control-next-icon" />
                     </a>
                 </div>
-            </div>
+            </section>
         )
     }
 }

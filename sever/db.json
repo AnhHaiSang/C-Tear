@@ -43,7 +43,7 @@
       "re_password": "123123123",
       "email": "nguyenthusongngoc@gmail.com",
       "phone": "0779592626",
-      "address": "01 Lê Cảnh Tuân, Sơn Trà ,Đà Nẵng",
+      "address": "01, Lê Cảnh Tuân, Sơn Trà, Đà Nẵng",
       "id": 4
     }
   ],
@@ -464,76 +464,6 @@
         }
       ],
       "total": 1420
-    },
-    {
-      "id": 4,
-      "information": {
-        "email": "nguyenthusongngoc@gmail.com",
-        "name": "",
-        "address": "",
-        "phone": "",
-        "ngaytao": "2019-12-27T13:15:38.670Z",
-        "tinhtrang": ""
-      },
-      "cartItems": [
-        {
-          "product": {
-            "id": 3,
-            "name": "RƯỢU VANG 62 ANNIVERSARIO",
-            "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296744/Img_project/product3_rbafgc.jpg",
-            "price": 165,
-            "inventory": 51,
-            "review": 4,
-            "description": "",
-            "loaispId": 1
-          },
-          "count": 4
-        },
-        {
-          "product": {
-            "id": 1,
-            "name": "RƯỢU VANG 50 ANNIVERSARIO",
-            "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product1_say0eu.jpg",
-            "price": 165,
-            "inventory": 69,
-            "review": 4,
-            "description": "",
-            "loaispId": 1
-          },
-          "count": 1
-        }
-      ],
-      "total": 825
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6,
-      "information": {
-        "email": "nguyenthusongngoc@gmail.com",
-        "name": "",
-        "address": "",
-        "phone": "",
-        "ngaytao": "2019-12-27T13:18:42.957Z",
-        "tinhtrang": ""
-      },
-      "cartItems": [
-        {
-          "product": {
-            "id": 2,
-            "name": "RƯỢU VANG 60 SESSANTANNI LIMITED EDITION",
-            "img": "https://res.cloudinary.com/sangco1997/image/upload/v1576296743/Img_project/product2_rlyuco.jpg",
-            "price": 165,
-            "inventory": 34,
-            "review": 5,
-            "description": "",
-            "loaispId": 1
-          },
-          "count": 1
-        }
-      ],
-      "total": 165
     }
   ],
   "order_details": []

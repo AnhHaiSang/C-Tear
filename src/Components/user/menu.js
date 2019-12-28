@@ -94,7 +94,7 @@ class Menu extends React.Component {
     return (
       <header className="bg-dark">
         <Link className="logo" to="/">
-          <img src={logo} alt="logo" style={{ width: '10em' }} />
+          <img src={logo} alt="logo" style={{ width: '7em' }} />
         </Link>
         <nav className="navbar navbar-expand-lg ">
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
