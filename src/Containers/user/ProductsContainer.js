@@ -3,7 +3,6 @@ import ListsProduct from '../../Components/user/lists_product';
 import ProductLists from '../../Components/user/product_lists';
 import { connect } from 'react-redux';
 import * as action from '../../Actions/user/ActionUser';
-import PropTypes from 'prop-types';
 
 // container trung gian giữa redux và conponents, container sẽ lấy data ở store
 // container thực hiện nhiệm vụ kết nối (vd mapStateToProps)
@@ -16,7 +15,7 @@ class ProductsContainer extends React.Component {
     }
     render() {
         var {products} = this.props;
-        // console.log(this.props.products);
+        console.log(this.props);
         
         return (
                 <ProductLists>
@@ -40,20 +39,20 @@ class ProductsContainer extends React.Component {
 
 
 //check object trong products (cai state in ProductReducer)
-ProductsContainer.propTypes ={
-    products: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            img: PropTypes.string.isRequired,
-            price: PropTypes.number.isRequired,
-            inventory: PropTypes.number.isRequired,
-            review: PropTypes.number.isRequired,
-            description: PropTypes.string.isRequired,
-            CategorieId: PropTypes.number.isRequired
+// ProductsContainer.propTypes ={
+//     products: PropTypes.arrayOf(
+//         PropTypes.shape({
+//             id: PropTypes.number.isRequired,
+//             img: PropTypes.string.isRequired,
+//             price: PropTypes.number.isRequired,
+//             inventory: PropTypes.number.isRequired,
+//             review: PropTypes.number.isRequired,
+//             description: PropTypes.string.isRequired,
+//             CategorieId: PropTypes.number.isRequired
 
-        })
-    ).isRequired
-}
+//         })
+//     ).isRequired
+// }
 
 const mapStateToProps = (state) => {
     // console.log(state.productsReducer.state);

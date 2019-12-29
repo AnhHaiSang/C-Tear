@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getprofileAPI, GetbillAPI } from '../../Actions/user/ActionUser';
+import { Link } from 'react-router-dom';
 
 class Profile extends React.Component {
     componentDidMount() {
@@ -41,7 +42,8 @@ class Profile extends React.Component {
                     </tr>
                 )
             })
-        } return result
+        } else {return result=<td colSpan={8}>Bạn chưa mua hàng <Link style={{color:"black"}}to="/">Click vào đây để mua hàng</Link></td>}
+        return result;
     }
     showprofile = (profile) => {
         let result = null;
@@ -68,7 +70,6 @@ class Profile extends React.Component {
                             <label htmlFor="address">ĐỊA CHỈ</label>
                             <input type="text" className="form-control" id="address" name="address" placeholder="Nhập địa chỉ" onChange={this.handOnChange} value={item.address} />
                         </div>
-                        <button className="btn btn-dark" >Cập Nhập</button>
                     </div>
                 )
             })

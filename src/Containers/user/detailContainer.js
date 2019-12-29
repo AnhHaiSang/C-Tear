@@ -11,6 +11,13 @@ import ProductDetailCategories from '../../Components/user/productDetailCategori
 
 
 class DetailContainer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            productss : ''
+        }
+    }
+    
     componentDidMount() {
         let { match } = this.props;
         if (match) {
@@ -18,20 +25,30 @@ class DetailContainer extends React.Component {
             this.props.Getdetails(id);
         };
     }
+    componentWillReceiveProps(nextProps){
+        if(nextProps && nextProps.products){
+            this.setState({
+                productss : nextProps.products
+            })
+            
+        }
+    }
     render() {
-        var { products, categories ,addtocart,history} = this.props;
+        var { products ,addtocart,history,match} = this.props;
+        let {productss} = this.state;
+        sessionStorage.setItem('DETAIL',JSON.stringify(products))
         // chèn thêm 1 bảng ở api vào component
         // vì nó lấy theo products.loaispId 
         // nên ta phải có được props.products rồi mới get vào id
         // ko nên bỏ nó vào componentDidMount vì ở trong đó không có props.products
-        this.props.GetCategories(products.loaispId);
-        // console.log(this.showcategorie(categories));
+        // this.props.GetCategories(products.loaispId);
+        // console.log(this.props);
 
         return (
             <div>
                 <ProductDetail>
                     <ProductDetailLists products={products} addtocart={addtocart} history={history}/>                
-                    <ProductDetailCategories products={products} categories={categories} />
+                    <ProductDetailCategories products={productss} match={match} history={history} />
                 </ProductDetail>
             </div>
         )

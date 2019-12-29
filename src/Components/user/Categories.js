@@ -10,7 +10,7 @@ export default class Categories extends Component {
 
                 <a href={`/ProductDetail/${item.id}`}>
 
-                    <img src={item.img} className="width__100" />
+                    <img src={item.img} className="width__100" alt=''/>
 
                     <div className="content_items">
                         <p>{item.name}</p>

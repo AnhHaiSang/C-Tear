@@ -28,10 +28,14 @@ class ProductDetailLists extends React.Component {
 
   addcart = (product, count) => {
     let { history } = this.props;
-    this.props.addtocart(product, count);
+    
     let historyLocal = history.location.pathname;
     localStorage.setItem('HISTORY',historyLocal);
-    history.push('/giohang')
+    if(sessionStorage.getItem('TOKEN')){
+      this.props.addtocart(product, count);
+      history.push('/giohang');
+    }else { history.push('/login') }
+    
   };
   showReview(review) {
     var result = [];
@@ -53,20 +57,20 @@ class ProductDetailLists extends React.Component {
   //     history.push('/giohang')
   //   } else { history.push('/login') }
   // }
-  log
+  
   render() {
     var { products } = this.props;
 
-    console.log(this.props);
+    // console.log(this.props);
 
     return (
       <section className="detail">
         <div className="flex-detail">
           <div className="img-detail">
-            <img src={products.img} alt="No Image" className="detail--img__100"></img>
+            <img src={products.img} alt="" className="detail--img__100"></img>
           </div>
 
-          <div className="content-detail" >
+          <div className="content-product" >
             <h2>{products.name}</h2>
 
             <div style={{ height: '50 px' }}>
@@ -85,7 +89,7 @@ class ProductDetailLists extends React.Component {
               <button className="btn btn-light" onClick={this.decrement}><h5>-</h5></button>
               <input className="btn" style={{ width: "35px", textAlign: "center" }} value={this.state.count} />
               <button className="btn btn-light" onClick={this.increment}><h5>+</h5></button>
-              <button style={{ marginLeft: "3%" }} onClick={() => this.addcart(products, this.state.count)} type="button" className="btn btn-dark">Add to Cart</button>
+              <button style={{ marginLeft: "3%" }} onClick={() => this.addcart(products, this.state.count)} type="button" className="btn menu_text">Add to Cart</button>
             </div>
             <div style={{ marginTop: "5%" }} >
               <h5>MÔ TẢ</h5>

@@ -14,7 +14,7 @@ class CartContainer extends Component {
             address: '',
             phone: '',
             tinhtrang: '',
-
+            dismodal: '',
         }
     }
     handOnChange = (e) => {
@@ -48,13 +48,14 @@ class CartContainer extends Component {
         } else {
             result = <tr>
                 <td colSpan={6}><h1>Bạn không có sản phẩm nào</h1></td>
-                
+
             </tr>
         }
         return result;
 
     }
     onBill = (e) => {
+        let data = '';
         e.preventDefault();
         let { id, name, address, phone, tinhtrang } = this.state;
 
@@ -68,17 +69,23 @@ class CartContainer extends Component {
             address,
             phone,
             ngaytao,
-            tinhtrang
         };
         let bill = {
             id,
             information,
             cartItems,
             total,
+            tinhtrang
         }
+        this.setState({ dismodal: 'modal' })
         addbill(bill);
         localStorage.removeItem('CART');
         history.push('/');
+
+        // console.log(this.state.dismodal);
+
+        // if (confirm("Mua hàng thành công"))//eslint-disable-line
+
     }
     showTotal(cart) {
         let total = null;
@@ -89,18 +96,18 @@ class CartContainer extends Component {
         }
         return total;
     }
-    checklogin = () => {
-        // console.log(sessionStorage.getItem('TOKEN'))
-        let result = null
-        let { history } = this.props;
-        if (sessionStorage.getItem('TOKEN')) {
-            result = "#myModal"
-        } else {
-            history.push('/login');
-        }
-        return result;
-    }
-    ShowProfile = (users) => {
+    // checklogin = () => {
+    //     // console.log(sessionStorage.getItem('TOKEN'))
+    //     let result = null
+    //     let { history } = this.props;
+    //     if (sessionStorage.getItem('TOKEN')) {
+    //         result = "#myModal"
+    //     } else {
+    //         history.push('/login');
+    //     }
+    //     return result;
+    // }
+    ShowProfile = (users, modal) => {
         let { cartItems } = this.props;
         let result = null;
         if (cartItems.length > 0) {
@@ -114,7 +121,7 @@ class CartContainer extends Component {
                                     <button type="button" className="close" data-dismiss="modal">×</button>
 
                                 </div>
-                                <form onSubmit={this.onBill}>
+                                <form >
                                     <div className="modal-body">
                                         <div className="container">
 
@@ -148,11 +155,12 @@ class CartContainer extends Component {
                                         </div>
 
                                     </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" className="btn btn-dark" >THANH TOÁN</button>
-                                    </div>
+
                                 </form>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-default" data-dismiss='modal'>Close</button>
+                                    <button type="button" className="btn btn-dark" onClick={this.onBill} data-dismiss='modal'>THANH TOÁN</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,17 +171,19 @@ class CartContainer extends Component {
         return result;
     }
     render() {
-
+        console.log(this.state.dismodal);
         let { cartItems, history, profile } = this.props;
-        return (
-            <CartDetail>
+        let data = '';
+        if(sessionStorage.getItem('TOKEN')){
+            return data = (
+                <CartDetail>
                 <div className="main" >
                     <h2>GIỎ HÀNG</h2>
                     <div>
                         <p>Tổng Tiền:  {this.showTotal(cartItems)}$</p>
-                        <button type="button" className="btn btn-dark" data-toggle="modal" data-target={this.checklogin()}>Thanh Toán</button>
-                        <Link to="/" className="btn btn-dark">Tiếp tục mua hàng</Link>
-                        <button className="btn btn-dark">Xóa Hết</button>
+                        <button type="button" className="btn menu_text" data-toggle="modal" data-target="#myModal">Thanh Toán</button>
+                        <Link to="/" className="btn menu_text">Tiếp tục mua hàng</Link>
+                        <button className="btn menu_text">Xóa Hết</button>
                     </div>
                     <div style={{ height: '50 px' }}>
                         <img src="../Image_Rudu/titleleft-dark.png" alt="giohang" />
@@ -181,7 +191,7 @@ class CartContainer extends Component {
                     <table className="table cart" border={1}>
                         <thead className="thead-light">
                             <tr>
-                                <th scope="col" style={{width:"25%"}}>ẢNH</th>
+                                <th scope="col" style={{ width: "25%" }}>ẢNH</th>
                                 <th scope="col">TÊN SẢN PHẨM</th>
                                 <th scope="col">GIÁ</th>
                                 <th scope="col" style={{ width: '100px' }}>SỐ LƯỢNG</th>
@@ -194,12 +204,17 @@ class CartContainer extends Component {
                         </tbody>
                     </table>
 
-                    {this.ShowProfile(profile)}
+                    {this.ShowProfile(profile, this.state.dismodal)}
 
 
                 </div>
             </CartDetail>
-        )
+            )
+        } else {
+            return data = (<div></div>)
+        }
+        
+        return data;
     }
 
 }

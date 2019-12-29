@@ -154,7 +154,7 @@ export default class componentName extends Component {
                             component={Abouts}
                         ></AppRouter>
                         <AppRouter
-                            path="/"
+                            path=""
                             layout={HomePage}
                             exact
                             component={Error404}

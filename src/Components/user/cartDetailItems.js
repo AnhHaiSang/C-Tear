@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 
 export default class CartDetailItems extends Component {
 
@@ -20,7 +19,7 @@ export default class CartDetailItems extends Component {
                 </td>
                 <td>{this.showMoney(product.price, count)}</td>
                 <td>
-                    <button onClick={() => this.delete(cartItems)} className="btn btn-dark">Xóa</button>
+                    <button onClick={() => this.delete(cartItems)} className="btn menu_text">Xóa</button>
                 </td>
             </tr>
         )

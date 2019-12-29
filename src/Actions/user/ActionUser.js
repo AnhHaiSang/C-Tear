@@ -4,7 +4,7 @@ import ApiCall from '../../utils/ApiCall';
 //show product
 export const showapiproduct = () => {
     return dispatch => {
-        return ApiCall(`products?_page=1`, 'GET', null).then(res => {
+        return ApiCall(`products?_start=1&_limit=4`, 'GET', null).then(res => {
             dispatch(showproduct(res.data));
         });
     };// hàm này khi được gọi lên sẽ đến products trong server -> thông qua phương thức GET -> truyền res.data(thông số của sản phẩm ở trên server) cho hàm showproduct

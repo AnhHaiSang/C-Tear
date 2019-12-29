@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 header{
-
+      padding-left: 120px;
       display: flex !important;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
       align-content: stretch;
-      margin-bottom: 2em;
+      margin-bottom: 11px;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +52,7 @@ a {
 
 img.slide_items {
   width: 100%;
-  height: 16em;
+  height: 25em;
 }
 
 .navbar-brand {
@@ -94,7 +94,6 @@ img.slide_items {
   display: block !important;
   position: absolute;
   top: 15%;
-  background-color: #eeee !important;
 }
 
 .img_card {
@@ -110,10 +109,9 @@ img.slide_items {
 
 img.img_pro1 {
   width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   max-width: 760px;
   margin: auto;
-  border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 5px;
   text-align: center;
   font-family: arial;
@@ -129,15 +127,33 @@ img.img_pro1 {
   margin: 0px auto;
   height: 731.335px;
 }
-
+.AboutProduct{
+  width: 100%;
+  height: 20em;
+}
+.button-header{
+   background-color:#1a1a1a;
+   color: white;
+   border: solid #1a1a1a 1px;
+  
+}
 .name-products {
   margin-top: 10%;
-  height: 115px;
+  height: 94px;
 }
+.menu_text{
+  font-size: 14px !important;
+  color:white !important;
+  background: #1a1a1a!important;
+}
+.menu_text:hover{
+  color:#ffff00 !important;
+  background: #000 !important;
 
+}
 .LineNewProduct {
   text-align: center;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .lists_item1 {
@@ -149,10 +165,13 @@ ul.d-flex.flex-wrap {
   padding: 0;
 }
 .flex-wrap {
-  display: flex;
-  flex-wrap: wrap!important;
-  margin: 0;
-    padding: 0;
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
+  align-content: center; 
+  margin-bottom: 3em;
 }
 .flex-wrap-lisproduct {
   width: 70%;
@@ -171,16 +190,14 @@ ul.d-flex.flex-wrap {
 
 li.list-group-item {
   margin-right: 1em;
-  width: 15em;
-  background: #f2f2f2;
+  width: 20%;
   margin-bottom: 1em !important;
   text-align: center;
-  border-radius: 5px;
-  border-top-width: 1px !important;
   padding: 10px 15px !important;
   margin-top: 2em;
-  
- 
+  border-top: solid #c9c9c9 1px !important;
+  border-radius: 2px;
+
 }
 li.list-group-item:hover{
   -webkit-box-shadow: 0px 0px 15px 0px rgba(196,196,196,1);
@@ -192,8 +209,8 @@ img.img_items {
   -webkit-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
   -moz-box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
   box-shadow: 0px 0px 3px 2px rgba(219,219,219,1);
-  width: 75%;
-  height: 250px;
+  width: 100%;
+
   max-width: 760px;
   margin: auto;
   text-align: center;
@@ -236,8 +253,6 @@ img.Image {
   width: 100%;
   position: absolute;
   top: 101%;
-  border-top: 1px solid #fefe;
-  background-color: #efefef;
 }
 
 .row {
@@ -286,7 +301,7 @@ span.input-group-text {
 
 .detail {
   margin: auto;
-  width: 60%
+  width: 70%
 }
 
 .main {
@@ -375,10 +390,11 @@ span.input-group-text {
 }
 /*--Detail--*/
 .img-detail{
-  width: 27em;
+  width: 22em;
 }
-.content-detail{
-  width: 13em;
+
+.content-product{
+  width: 22em;
 }
 .flex-detail {
   display: flex;
@@ -398,7 +414,7 @@ span.input-group-text {
 
 @media screen and (min-width:768px) and (max-width:860px) {
   .LineNewProduct {
-      margin-top: 19%;
+      margin-top: 1%;
   }
 
   .h1new {
@@ -408,7 +424,7 @@ span.input-group-text {
 
 @media screen and (min-width:861px) and (max-width:1030px) {
   .LineNewProduct {
-      margin-top: 10%;
+      margin-top: 1%;
   }
   .lists_footer {
       width: 9em;

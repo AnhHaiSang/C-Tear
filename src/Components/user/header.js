@@ -5,10 +5,12 @@ import Menu from './menu';
 
 class Header extends React.Component {
     render(){
+        // console.log(this.props);
+        
         return(
             <div className="Header">
                 <Slide />
-                <Menu />
+                <Menu history={this.props.history}/>
             </div>
         )
     }

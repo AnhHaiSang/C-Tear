@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class ListsProduct extends React.Component {
     render() {
         var { products } = this.props;
-        console.log(this.props.products);
+        // console.log(this.props.products);
         // let total;
         return (
             <Link to={`/ProductDetail/${products.id}`}>
@@ -28,7 +28,7 @@ class ListsProduct extends React.Component {
                         <h4 className="price">${products.price}</h4>
                     </div>
                 </div>
-                <button className="btn btn-primary">Xem Thêm</button>
+                <button className="btn menu_text">Xem Thêm</button>
             </Link>
         )
     }

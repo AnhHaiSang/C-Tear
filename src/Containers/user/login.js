@@ -10,7 +10,11 @@ class Login extends React.Component {
             password: '',
         }
     }
-
+    componentDidMount() {
+        this.props.getuser()
+        // console.log(this.props.getuser);
+        
+    }
     handOnChange = (e) => {
         switch (e.target.name) {
             case 'password':
@@ -33,6 +37,8 @@ class Login extends React.Component {
         let { users, history } = this.props;
         users.forEach(eachRow => {
             if (email === eachRow['email'] && password === eachRow['password']) {
+                console.log('abc');
+                
                 if (localStorage.getItem('HISTORY')) {
                     history.push(localStorage.getItem('HISTORY'));
                     sessionStorage.setItem('TOKEN', email);
@@ -47,7 +53,6 @@ class Login extends React.Component {
 
     onLogin = () => {
         let erro = '';
-        // e.preventDefault();
         Object.keys(this.state).forEach(k => {
             if (!this.state['' + k]) {
                 erro = k + 'is required';
@@ -56,19 +61,17 @@ class Login extends React.Component {
         if (erro) {
             //messs
         } else {
-            let reLogin = this.doLogin(this.state);
-            console.log(reLogin);
-            if (reLogin) {
-                //mess
-            }
+           let reslogin = this.doLogin(this.state);
+           if(reslogin){
+               console.log('def');
+               
+           }
         }
     }
 
-    componentDidMount() {
-        this.props.getuser()
-    }
+
     render() {
-        // console.log(this.state);
+        console.log(this.state); 
 
         return (
             <div className="login">
@@ -77,22 +80,22 @@ class Login extends React.Component {
                     <img src="../Image_Rudu/titleleft-dark.png" alt="giohang" />
                 </div>
                 <div>
-                    <form className="form-horizontal" >
-                        <div className="form-group">
+                    <form className="form-horizontal" onSubmit={()=>this.onLogin()}>
+                        <div className='form-group'>
                             <label htmlFor="email">EMAIL:</label>
                             <div>
-                                <input type="text" className="form-control" id="email" placeholder="Nhập địa chỉ email" name="email" onChange={this.handOnChange} />
+                                <input type="text" className='form-control' id="email" placeholder="Nhập địa chỉ email" name="email" onChange={this.handOnChange} />
                             </div>
                         </div>
-                        <div className="form-group">
+                        <div className='form-group'>
                             <label htmlFor="password">MẬT KHẨU:</label>
                             <div>
-                                <input type="password" className="form-control" id="password" placeholder="Nhập mật khẩu" name="password" onChange={this.handOnChange} />
+                                <input type="password" className='form-control' id="password" placeholder="Nhập mật khẩu" name="password" onChange={this.handOnChange} />
                             </div>
                         </div>
                         <div className="form-group">
                             <div>
-                                <button type="button" className="btn btn-dark" onClick={this.onLogin}>Submit</button>
+                                <button type="submit" className="btn menu_text" >Đăng nhập</button>
                                 <Link to="/" className="btn btn-default">HỦY</Link>
                             </div>
                         </div>

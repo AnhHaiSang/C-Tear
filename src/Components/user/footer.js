@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import footer from "../../Image_Rudu/footer.jpg"
 
 class Footer extends React.Component {
     render() {
         return (
             <footer className="footer">
+                <div style={{ width: "80%", margin: "auto" }}>
+                    <img src={footer} width={"100%"} alt=''/>
+                </div>
+
                 <div className="foooter_content">
                     <div className="info lists_footer">
                         <div className="header_items_footer">
@@ -40,7 +45,7 @@ class Footer extends React.Component {
                                 <label htmlFor="demo">Gửi email cho chúng tôi để đc hỗ trợ</label>
                                 <div className="input-group mb-3">
                                     <input type="text" className="form-control" placeholder="Email của bạn" id="demo" name="email" />
-                                    <button type="email"id="mailbutton" class="btn-primary">Send</button>
+                                    <button type="email" id="mailbutton" className="btn-primary">Send</button>
                                 </div>
                             </form>
                         </div>

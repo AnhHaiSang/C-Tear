@@ -85,7 +85,7 @@ class RegisterPage extends React.Component {
                 class_status_password: 'was-validated'
             })
         }
-        if ((this.state.re_password !== this.state.password) || this.state.re_password == "") {
+        if ((this.state.re_password !== this.state.password) || this.state.re_password === "") {
             re_passwordError = "Vui lòng nhập lại mật khẩu";
             this.setState({
                 class_child_re_password: 'form-control is-invalid',
@@ -227,7 +227,7 @@ class RegisterPage extends React.Component {
                                 onChange={this.handOnChange} />
                         </div>
                         <div className="form-group">
-                            <button className="btn btn-dark " onClick={this.onSubmitUser}>ĐĂNG KÝ</button>
+                            <button className="btn menu_text " onClick={this.onSubmitUser}>ĐĂNG KÝ</button>
 
                             <Link to="/" className="btn btn-default">HỦY</Link>
                         </div>

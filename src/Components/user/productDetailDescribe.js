@@ -7,13 +7,13 @@ class ProductDescrible extends React.Component {
                 
                     {/* Nav tabs */}
                     <ul className="nav nav-tabs" role="tablist" style={{ width: "85%", margin: "auto", textAlign: "center" ,paddingTop:"1%"}}>
-                        <li className="nav-item margin2">
+                        <li className="nav-item">
                             <a className="btn btn-warning active" data-toggle="tab" href="#home">ĐẶC ĐIỂM NỔI BẬT</a>
                         </li>
-                        <li className="nav-item margin2">
+                        <li className="nav-item">
                             <a className="btn btn-warning" data-toggle="tab" href="#menu1">THÔNG TIN SẢN PHẨM</a>
                         </li>
-                        <li className="nav-item margin2">
+                        <li className="nav-item">
                             <a className="btn btn-warning" data-toggle="tab" href="#menu2">ĐÁNH GIÁ</a>
                         </li>
                     </ul>

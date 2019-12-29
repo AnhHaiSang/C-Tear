@@ -6,8 +6,8 @@ const categoriesReducer = (state = categoriesInte, action) => {
         case Types.GET_PRODUCT_CATEGORIES:
             
             // console.log(action.categories);
-            
-            return action.categories
+            state = action.categories;
+            return [...state]
         default:
             return state
     }
