@@ -15,3 +15,12 @@ export const SHOW_PRODUCTS = 'SHOW_PRODUCTS';
 
 // ---------const Accout -----------
 export const SHOW_ACCOUT = 'SHOW_ACCOUT';
+
+
+// ---------const Accout -----------
+export const SHOW_BILL = 'SHOW_BILL';
+export const UPDATE_BILL = 'UPDATE_BILL';
+export const EDIT_BILL_IN_SV = 'EDIT_BILL_IN_SV'; 
+
+// ----------login admin------------
+export const GET_ACCOUT_AMIN = 'GET_ACCOUT_AMIN'; 

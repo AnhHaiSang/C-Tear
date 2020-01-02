@@ -19,7 +19,7 @@ class CatelogyActionPage extends Component {
     //sử dụng lifecycle để lấy dữ liệu
     componentDidMount() {
         var { match } = this.props;
-        console.log(this.props.match.params);
+        // console.log(this.props.match.params);
         if (match.params.id) {
             var id = match.params.id;
             // console.log(id); 
@@ -49,9 +49,7 @@ class CatelogyActionPage extends Component {
             status: chbstatus,
         }
         let { history } = this.props
-        // console.log(id);
         if (id) {
-            // console.log('updateting...');
             this.setState({
                 name: txtname,
                 status: chbstatus
@@ -68,14 +66,14 @@ class CatelogyActionPage extends Component {
     }
     render() {
         // console.log(this.state);
-        // console.log(this.props.EditItem.status); 
-        let { name } = this.state;
+        // console.log(this.props); 
+        let { name} = this.state;
         return (
             <div className="div-form-categories">
                 <h3 style={{textAlign: "center"}}>Form Categories</h3>
                 <form className="form-categories" onSubmit={this.onSave}>
                     <div className="input-group mb-3">
-                        <div className="input-group-prepend">
+                      <div className="input-group-prepend">
                             <span className="input-group-text" style={{width: "133px"}}>Categories Name</span>
                         </div>
                         <input
@@ -83,10 +81,10 @@ class CatelogyActionPage extends Component {
                         className="form-control form-control"
                         ref={this.txtname}
                         id="email2"
-                        name="email"
+                        name="categoriesname"
                         defaultValue={name}
                     />
-                    </div>
+                    </div>  
                     <div className="form-check mb-2 mr-sm-2">
                         <label className="form-check-label">
                             <input
@@ -94,7 +92,7 @@ class CatelogyActionPage extends Component {
                                 ref={this.txtstatus}
                                 className="form-check-input active"
                                 name="loaispId"
-                                checked={this.props.EditItem.status}
+                                defaultChecked={this.props.EditItem.status}
                             />Còn Hàng
                         </label>
                     </div>
@@ -115,7 +113,6 @@ class CatelogyActionPage extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-
     return { 
         EditItem: state.EditItem
     }

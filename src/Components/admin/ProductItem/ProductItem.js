@@ -36,4 +36,4 @@ export default class ProductItem extends Component {
             this.props.delProducts(id);
         }
     }
-}
+} 

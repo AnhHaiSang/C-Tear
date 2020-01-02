@@ -9,14 +9,16 @@ class ProductsActionPage extends Component {
     constructor(props) {
         super(props)
         this.txtname = React.createRef();   //lay value cua input va check value cua input
+        this.txtimg = React.createRef();   //lay value cua input va check value cua input
         this.txtprice = React.createRef();   //lay value cua input va check value cua input
         this.txtinventory = React.createRef();   //lay value cua input va check value cua input
         this.txtselreview = React.createRef();   //lay value cua input va check value cua input
         this.txtdescription = React.createRef();   //lay value cua input va check value cua input
-        this.txtselloaispId = React.createRef();   //lay value cua input va check value cua input
+        this.txtloaispId = React.createRef();   //lay value cua input va check value cua input
         this.state = {
             id: '',
             name: '',
+            img: '',
             price: '',
             inventory: '',
             review: '',
@@ -41,6 +43,7 @@ class ProductsActionPage extends Component {
             this.setState({
                 id: EditProductsItem.id,
                 name: EditProductsItem.name,
+                img: EditProductsItem.img,
                 price: EditProductsItem.price,
                 inventory: EditProductsItem.inventory,
                 review: EditProductsItem.review,
@@ -49,26 +52,20 @@ class ProductsActionPage extends Component {
             })
         }
     }
-
-    // handleEditorChange = (e) => {
-    //     var target = e.target;
-    //     var Description = target.Description;
-    //     this.setState({
-    //         Description: this.state.Description
-    //     });
-    //   }
     onSaveProduct = (e) => {
         e.preventDefault();
         var { id } = this.state;
         var txtname = this.txtname.current.value;
+        var txtimg = this.txtimg.current.value;
         var txtprice = this.txtprice.current.value;
         var txtinventory = this.txtinventory.current.value;
         var txtselreview = this.txtselreview.current.value;
         var txtdescription = this.txtdescription.current.value;
-        var txtloaispId = this.txtSelloaisp.current.value;
+        var txtloaispId = this.txtloaispId.current.value;
         var products = {
             id,
             name: txtname,
+            img: txtimg,
             price: txtprice,
             inventory: txtinventory,
             review: txtselreview,
@@ -79,6 +76,7 @@ class ProductsActionPage extends Component {
         if (id) {
             this.setState({
                 name: txtname,
+                img: txtimg,
                 price: txtprice,
                 inventory: txtinventory,
                 review: txtselreview,
@@ -89,6 +87,7 @@ class ProductsActionPage extends Component {
         } else {
             this.setState({
                 name: txtname,
+                img: txtimg,
                 price: txtprice,
                 inventory: txtinventory,
                 review: txtselreview,
@@ -103,7 +102,7 @@ class ProductsActionPage extends Component {
     }
     render() {
         // let { categories } = this.props
-        console.log(this.props);
+        // console.log(this.props.EditProductsItem);
         // console.log(this.state);
         return (
             <div className="div-from-products">
@@ -120,14 +119,15 @@ class ProductsActionPage extends Component {
                             defaultValue={this.props.EditProductsItem.name}
                         />
                     </div>
-                    <div className="input-group mb-3 pr">
+                    <div className="input-group mb-3">
                         <div className="input-group-prepend">
                             <span className="input-group-text">Image</span>
                         </div>
                         <input
-                            // ref={this.txtname}
-                            type="file"
+                            ref={this.txtimg}
+                            type="text"
                             className="form-control form-control"
+                            defaultValue={this.props.EditProductsItem.img}
                         />
                     </div>
                     <div className="input-group mb-3 pr">
@@ -174,7 +174,7 @@ class ProductsActionPage extends Component {
                         </div>
                         {/* <textarea className="form-control" rows={5} id="comment" defaultValue={""} /> */}
                         <Editor
-
+                            ref={this.txtdescription}
                             initialValue={this.props.EditProductsItem.description}
                             onChange={this.handleEditorChange}
                             apiKey='y33wnkupp4d7u4x4tdhfth0n6gs2nugxt73e38gn4cn0fp20'
@@ -198,15 +198,15 @@ class ProductsActionPage extends Component {
                             <span className="input-group-text">Categories</span>
                         </div>
                         <select
-                            defaultValue={this.props.EditProductsItem.loaispId}
                             ref={this.txtloaispId}
+                            defaultValue={this.props.EditProductsItem.loaispId}
                             className="form-control"
                             id="sel1">
                             {this.showCategories(this.props.CetegoriesOfProduct)}
                         </select>
                     </div>
 
-                    <div>
+                    <div className="btn-products">
                         <button
                             type="submit"
                             className="btn btn-primary mb-2 mr-10"
