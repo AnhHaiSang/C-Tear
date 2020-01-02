@@ -6,9 +6,11 @@ import title_dark from './../img/Image_Rudu/title_dark.png';
 class AboutProduct extends React.Component {
     render() {
         return (
-            <div className="AboutProduct">
-                <img src={product} style={{ width: "22em", float: "left" }} alt=''/>
-                <img src={product2} style={{ width: "14em", float: "right" }} alt='' />
+            <section className="AboutProduct">
+                <div className="img-aboutproduct">
+                    <img src={product} style={{ float: "left" }} alt='' />
+                    <img src={product2} style={{ float: "right" }} alt='' />
+                </div>
                 <div style={{ textAlign: "center", width: "55%", margin: "auto", paddingBottom: "2em" }}>
                     <br></br>
                     <h2>GIỚI THIỆU</h2>
@@ -19,7 +21,7 @@ class AboutProduct extends React.Component {
                     <button className="button-header">Xem Thêm</button>
                 </div>
 
-            </div>
+            </section>
         )
     }
 }

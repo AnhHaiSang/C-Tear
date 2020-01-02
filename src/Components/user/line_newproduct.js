@@ -5,7 +5,7 @@ class LineNewProduct extends React.Component {
     render(){
         return(
             <div className="LineNewProduct">
-                <h3>Sản phẩm mới</h3>
+                <h3>SẢN PHẨM MỚI</h3>
                 <img src={title_dark} alt="title-dark"></img>              
             </div>
         )

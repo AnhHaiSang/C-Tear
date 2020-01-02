@@ -55,7 +55,7 @@ class CartContainer extends Component {
 
     }
     onBill = (e) => {
-        let data = '';
+        // let data = '';
         e.preventDefault();
         let { id, name, address, phone, tinhtrang } = this.state;
 
@@ -119,7 +119,6 @@ class CartContainer extends Component {
                                 <div className="modal-header">
                                     <h4 className="modal-title">BILL</h4>
                                     <button type="button" className="close" data-dismiss="modal">×</button>
-
                                 </div>
                                 <form >
                                     <div className="modal-body">

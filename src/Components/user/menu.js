@@ -48,7 +48,7 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
       path={to}
       exact={activeOnlyWhenExact}
       children={({ match }) => {
-        var active = match ? 'active' : '';
+        // var active = match ? 'active' : '';
         return (
 
           <Link className="btn menu_text" to={to}>
@@ -98,7 +98,7 @@ class Menu extends React.Component {
         <button onClick={() => this.logout()} className="btn menu_text" >Đăng xuất</button>
         <button className="btn menu_text" style={{ border: "solid #fff 1px" }}>
           <Link to="/giohang" >
-            <img src={giohang} style={{ width: "30px", marginRight: "2em" }} /><span style={{ fontSize: "1em", color: "white" }}>{data.length}</span>
+            <img src={giohang} style={{ width: "30px", marginRight: "2em" }} alt=""/><span style={{ fontSize: "1em", color: "white" }}>{data.length}</span>
           </Link>
         </button>
       </span >

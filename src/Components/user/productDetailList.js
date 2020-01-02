@@ -66,11 +66,11 @@ class ProductDetailLists extends React.Component {
     return (
       <section className="detail">
         <div className="flex-detail">
-          <div className="img-detail">
+          <div className="img-detail col-sm-6">
             <img src={products.img} alt="" className="detail--img__100"></img>
           </div>
 
-          <div className="content-product" >
+          <div className="content-product col-sm-6" >
             <h2>{products.name}</h2>
 
             <div style={{ height: '50 px' }}>

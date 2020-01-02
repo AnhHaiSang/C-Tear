@@ -4,6 +4,7 @@ import LineNewProduct from './line_newproduct';
 import AboutProduct from './AboutProduct';
 import ProductsContainer from '../../Containers/user/ProductsContainer';
 import ImageProduct from './content_image';
+import Review from './Review';
 
 
 class Content extends React.Component {
@@ -15,8 +16,8 @@ class Content extends React.Component {
                 <LineNewProduct />
                 <ProductsContainer/>
                 <ImageProduct />
-                <LineNewProduct />
                 <ProductsContainer/>
+                <Review/>
             </div>
         )
     }

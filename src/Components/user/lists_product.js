@@ -10,25 +10,30 @@ class ListsProduct extends React.Component {
         // let total;
         return (
             <Link to={`/ProductDetail/${products.id}`}>
-                <div>
-                    <img className="img_items" src={products.img} alt="product_item" />
-                </div>
-                <div className="content-detail">
-                    <div className="name-products">
-                        <p>{products.name}</p>
+                <div className="relative">
+                    <div>
+                        <img className="img_items" src={products.img} alt="product_item" />
                     </div>
-                    <h3 className="div-review">
-                        <ul className="review">
-                            <li className="star">
-                                {this.showReview(products.review)}
-                            </li>
-                        </ul>
-                    </h3>
-                    <div className="div-price">
-                        <h4 className="price">${products.price}</h4>
+                    <div className="content-detail">
+                        <div className="name-products">
+                            <p>{products.name}</p>
+                        </div>
+                        <h3 className="div-review">
+                            <ul className="review">
+                                <li className="star">
+                                    {this.showReview(products.review)}
+                                </li>
+                            </ul>
+                        </h3>
+                        <div className="div-price">
+                            <h4 className="price">${products.price}</h4>
+                        </div>
                     </div>
+                    <button className="btn menu_text">Xem Thêm</button>
                 </div>
-                <button className="btn menu_text">Xem Thêm</button>
+                <div className="absolute">
+                    <p style={{textAlign:"left",marginLeft:"5px"}}>5%</p>
+                </div>
             </Link>
         )
     }

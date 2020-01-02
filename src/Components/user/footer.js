@@ -11,7 +11,7 @@ class Footer extends React.Component {
                 </div>
 
                 <div className="foooter_content">
-                    <div className="info lists_footer">
+                    <div className="col-sm">
                         <div className="header_items_footer">
                             <h4>THÔNG TIN</h4>
                         </div>
@@ -23,7 +23,7 @@ class Footer extends React.Component {
                             <Link to="/"><p>CHÍNH SÁCH RIÊNG TƯ</p></Link >
                         </div>
                     </div>
-                    <div className="buy lists_footer">
+                    <div className="col-sm">
                         <div className="header_items_footer">
                             <h4>MUA HÀNG</h4>
                         </div>
@@ -35,7 +35,7 @@ class Footer extends React.Component {
                             <Link to="/"><p>DỊCH VỤ GIẢM GIÁ</p></Link >
                         </div>
                     </div>
-                    <div className="sent_email lists_footer">
+                    <div className="col-sm">
                         <div className="header_items_footer">
                             <h4>GỬI EMAIL</h4>
                         </div>
@@ -43,14 +43,14 @@ class Footer extends React.Component {
                         <div className="mt-3">
                             <form>
                                 <label htmlFor="demo">Gửi email cho chúng tôi để đc hỗ trợ</label>
-                                <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Email của bạn" id="demo" name="email" />
-                                    <button type="email" id="mailbutton" className="btn-primary">Send</button>
+                                <div className="input-group">
+                                    <input type="text" className="form-control col-sm-10" placeholder="Email của bạn" id="demo" name="email" />
+                                    <button type="email" id="mailbutton" className="menu_text">Send</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div className="contact_us lists_footer">
+                    <div className="col-sm">
                         <p>Posted by: Hege Refsnes</p>
                         <p>Contact information: <Link to="/mailto:someone@example.com">
                             someone@example.com</Link >.</p>
