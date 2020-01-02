@@ -9,7 +9,6 @@ export const showApiCategories = () => {
         });
     };  
 }
- 
 export const showCategories = (categories) => {
     return {
         type: Types.SHOWCATEGORIES, 
@@ -171,5 +170,52 @@ export const showAcout = (users) => {
     return {
         type: Types.SHOW_ACCOUT, 
         users
+    }
+}
+// --------------------Bill Action-------------
+//                      show Bill
+export const showApiBill = () => {
+    return dispatch => {
+        return ApiCall('orders', 'GET', null).then(res => {
+            dispatch(showBill(res.data));
+        });
+    };  
+}
+ 
+export const showBill = (billad) => {
+    return {
+        type: Types.SHOW_BILL, 
+        billad
+    }
+}
+ 
+//                   edit bill
+export const actEditBill = (id)=>{
+    return dispatch =>{
+        return ApiCall(`orders/${id}`, 'GET', null).then( res =>{
+            dispatch(editBill(res.data));
+        });
+    };
+}
+export const editBill = (orders) => {
+    return {
+        type: Types.EDIT_BILL_IN_SV,
+        orders 
+    }
+}
+
+
+//-----------Login admin-------
+export const actGetAcoutAdmin = ()=>{
+    return dispatch => {
+        return ApiCall('admin', 'GET', null).then(res => {
+            dispatch(getAcoutAdmin(res.data));
+        });
+    };  
+}
+export const getAcoutAdmin = (admin) => {
+    return {
+        type: Types.GET_ACCOUT_AMIN,
+        admin 
     }
 }
