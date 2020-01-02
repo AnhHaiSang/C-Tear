@@ -10,6 +10,10 @@ import ProfileReducer from './ProfileReducer';
 import ProductsReducerAdmin from '../admin/ProductsReducerAdmin';
 import EditProductsItem from '../admin/EditProductsItem';
 import AccoutReducerAdmin from '../admin/AccoutReducer';
+import BillReducerAdmin from '../admin/BillReducerAdmin';
+import EditBillAdmin from '../admin/EditBillAdmin';
+import LoginAdminReducer from '../admin/loginAdminReducer';
+
 
 const appReducers = combineReducers({
     productsReducer,
@@ -22,7 +26,10 @@ const appReducers = combineReducers({
     BillReducer,
     ProductsReducerAdmin,
     EditProductsItem,
-    AccoutReducerAdmin
+    AccoutReducerAdmin,
+    BillReducerAdmin,
+    EditBillAdmin,
+    LoginAdminReducer
     
 })
 export default appReducers;

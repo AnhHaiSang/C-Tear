@@ -13,7 +13,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 25/12/2019 | 2.014 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#qwe" className="btn btn-primary">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 24/12/2019 | 1.954 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#qwe" className="btn btn-primary">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 14/12/2019 | 905 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#qwe" className="btn btn-primary">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 20/12/2019 | 1.101 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn,...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#qwe" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                         <div className="col-lg-12">
@@ -58,7 +58,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 22/12/2019 | 1.954 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#asd" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                         <div className="col-lg-12">
@@ -68,7 +68,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 2/8/2019 | 1.954 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#asd" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                     </div>
@@ -80,7 +80,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 4/09/2019 | 5.954 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#asd" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                         <div className="col-lg-12">
@@ -90,7 +90,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 15/10/2019 | 2.569 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#asd" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                         <div className="col-lg-12">
@@ -100,7 +100,7 @@ class Abouts extends React.Component {
                                     <h5 className="card-title">Vang Thăng Long Classic</h5>
                                     <p className="card-p">Đăng bởi Ngocnguyen | 7/5/2019 | 5.487 bình luận</p>
                                     <p className="card-text">Vang Nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên của hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn, Vang Nổ Thăng long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai 750ml...</p>
-                                    <a href="#" className="btn btn-primary">Read more</a>
+                                    <a href="#asd" className="btn btn-primary">Read more</a>
                                 </div>
                             </div></div>
                     </div>

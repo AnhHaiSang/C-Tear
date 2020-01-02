@@ -1,19 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class OrderItem extends Component {
     render() {
+        // console.log(this.props.billad.information);
+        let { id, information, total } = this.props.billad;
+        let {tinhtrang} = this.props.billad.information;
+        var tinhtrangName = tinhtrang ? 'Đã chuyển' : 'Đang chuyển';
+        var tinhtrangClass = tinhtrang ? 'warning' : 'danger';
         return (
             <tr>
-                <td>STT</td>
-                <td>id</td>
-                <td>userID </td>
-                <td>addess</td>
-                <td>status ship</td>
-                <td>created at</td>
-                <td>total price</td>
+                <td>{this.props.index + 1}</td>
+                <td>{information.name}</td>
+                <td>{information.phone}</td>
+                <td>{information.address}</td>
                 <td>
-                    <button type="button" className="btn btn-primary mr-10">Sửa</button>
-                    <button type="button" className="btn btn-secondary">Xóa</button>
+                    <span className={`badge badge-${tinhtrangClass}`}>
+                        {tinhtrangName}
+                    </span>
+                </td>
+                <td>{information.ngaytao}</td>
+                <td>{total}</td>
+                <td>
+                    <Link to={`/admin/bill/edit/${id}`} className="btn btn-primary mr-10">Sửa</Link>
                 </td>
             </tr>
         )

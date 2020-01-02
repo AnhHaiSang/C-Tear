@@ -12,9 +12,12 @@
 .mt-10 {
     margin-top: 10px;
 }
+.chart {
+    width: 85%;
+}
 .h4-name-team{
     margin-left: 15px;
-    margin-top: 20px;
+    margin-top: 55px;
 }
 .container-fluid{
     padding: 0 !important
@@ -63,6 +66,11 @@ div#undefined{
 img.image-products-admin {
     width: 70%;
     height: 250px;
+    border: 0.125px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
 }
 .table-dark td, .table-dark th, .table-dark thead th {
     border-color: #f7f7f7;
@@ -71,4 +79,12 @@ img.image-products-admin {
 span.input-group-text {
     padding: 3px;
     width: 90px;
+}
+.div-form-bill {
+    width: 75%;
+    margin: 35px auto;
+}
+form.form-login-admin {
+    width: 80%;
+    margin: auto;
 }

@@ -8,7 +8,7 @@ const ProductsReducerAdmin = (state = ProductsInitialState, action) => {
             return [...state]
         case Types.ADD_PRODUCTS_TO_SV:
             state.push(action.products);
-            return [...state]
+            return [...state] 
         case Types.DELETE_PRODUCTS_IN_SV:
             let index = state.findIndex(item => {
                 return item.id === action.id;

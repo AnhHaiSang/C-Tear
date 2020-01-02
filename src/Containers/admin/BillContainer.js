@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
+import OrderItem from '../../Components/admin/Order/OrderItem';
 import { connect } from 'react-redux';
-import AccoutUserItem from '../../Components/admin/AccoutUser/AccoutUserItem';
-import { showApiAccout } from '../../Actions/admin/ActionAdmin';
+import { showApiBill } from '../../Actions/admin/ActionAdmin';
 
-class AccoutContainerUser extends Component {
+class BillContainer extends Component {
     componentDidMount() {
-        this.props.showAccout();
+        this.props.showBill();
     }
-    showAccoutDb(users) {
+    showBillDb(billad) {
         var result = null;
-        if (users.length > 0) {
-            result = users.map((users, index) => {
-                return <AccoutUserItem
+        if (billad.length > 0) {
+            result = billad.map((billad, index) => {
+                return <OrderItem
                     key={index}
-                    users={users}
+                    billad={billad}
                     index={index}
                 />
             });
@@ -24,11 +24,11 @@ class AccoutContainerUser extends Component {
         // console.log(this.props);
         return (
             <div className="col-sm-9 mt-10">
-                <h3 style={{ textAlign: "center", marginBottom: "30px" }}>Manage Accout User</h3>
+                <h3 style={{ textAlign: "center", marginBottom: "30px" }}>Manage Bill</h3>
                 <div className="panel panel-primary">
                     <div className="bg-primary text-white">
                         <h3 style={{ textAlign: "center", marginBottom: "0px" }}>
-                            Lists Accout User
+                            Lists Bill
                             </h3>
                     </div>
                     <div className="panel-body">
@@ -36,16 +36,17 @@ class AccoutContainerUser extends Component {
                             <thead>
                                 <tr>
                                     <th>STT</th>
-                                    <th>Full Name</th>
-                                    <th>Password</th>
-                                    <th>Re-Password</th>
-                                    <th>Email</th>
+                                    <th>User Name</th>
                                     <th>Phone Number</th>
-                                    <th>Address</th>
+                                    <th>Addess</th>
+                                    <th>Status Ship</th>
+                                    <th>Created At</th>
+                                    <th>Total Price</th>
+                                    <th>Hành Động</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.showAccoutDb(this.props.AccoutAdmin)}
+                                {this.showBillDb(this.props.BillAdmin)}
                             </tbody>
                         </table>
                     </div>
@@ -56,14 +57,14 @@ class AccoutContainerUser extends Component {
 }
 const mapStateToProps = (state, ownProps) => {
     return {
-        AccoutAdmin: state.AccoutReducerAdmin
+        BillAdmin: state.BillReducerAdmin
     }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        showAccout: () => {
-            dispatch(showApiAccout())
+        showBill: () => {
+            dispatch(showApiBill())
         }
     }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(AccoutContainerUser)
+export default connect(mapStateToProps, mapDispatchToProps)(BillContainer)
