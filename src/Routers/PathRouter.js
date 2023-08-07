@@ -110,7 +110,7 @@ export default class componentName extends Component {
                         >
                         </AppRouter>
                         <AppRouter
-                            path="/cart"
+                            path="/giohang"
                             layout={HomePage}
                             exact
                             component={CartContainer}
