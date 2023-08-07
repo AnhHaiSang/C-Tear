@@ -6,7 +6,7 @@ const ProductReducer = []
         case Types.SHOWPRODUCT:
             state = action.products
             
-            return [...state]
+            return ''
         case Types.GET_PRODUCT_DETAIL:
             // console.log(action.products);
             

@@ -2,20 +2,20 @@ import React from 'react';
 import ContentProduct from './content_products';
 import LineNewProduct from './line_newproduct';
 import ProductsContainer from '../../Containers/user/ProductsContainer';
-import ImageProduct from './content_image';
+import Slide from './slide';
 
 
 class Content extends React.Component {
     render(){
         return(
-            <div className="content">
+            <main className="main" id="main">
+                <Slide />
                 <ContentProduct />
                 <LineNewProduct />
                 <ProductsContainer/>
-                <ImageProduct />
                 <LineNewProduct />
                 <ProductsContainer/>
-            </div>
+            </main>
         )
     }
 }
