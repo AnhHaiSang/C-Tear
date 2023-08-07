@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class ListsProduct extends React.Component {
     render() {
         var { products } = this.props;
-        // console.log(this.props.products);
+        console.log(this.props.products);
         // let total;
         return (
             <Link to={`/ProductDetail/${products.id}`}>

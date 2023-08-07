@@ -1,14 +1,15 @@
 import React from 'react';
-
+import Slide from './slide';
 import Menu from './menu';
 
 
 class Header extends React.Component {
     render(){
         return(
-            <header className="header" id="header">
+            <div className="Header">
+                <Slide />
                 <Menu />
-            </header>
+            </div>
         )
     }
 }
