@@ -10,6 +10,7 @@
     "axios": "^0.21.1",
     "beauty-stars": "^1.0.4",
     "cloudinary-react": "^1.2.1",
+    "clsx": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-rater": "^5.1.1",

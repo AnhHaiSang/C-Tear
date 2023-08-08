@@ -7,10 +7,12 @@ import * as Config from '../Constants/APIConstans';
 //data là dữ liệu 
 
 export default function ApiCall(endpoint, method = 'GET', body){
+    console.log("🚀 ~ file: ApiCall.js:14 ~ ApiCall ~ endpoint:", endpoint);
     return axios({
         method: method,
         url: `${Config.API_URL}/${endpoint}`,
         data: body
+        
     }).catch(err => {
         console.log(err);
     });
