@@ -1,0 +1,46 @@
+cài đặt modun react-redux
+npm install redux react-redux --save
+npm install react-dom react-scripts  --save (lỗi khi start)
+tạo cái thư mục
+    +reducers
+        +index.js
+            -import { combineReducers} from  'redux';
+            -import products from '...';
+            const appReducers = combineReducers({
+            products
+            })
+            export default appReducers;
+        +products.js
+            -import constans và aciontypes
+            - chứa states của products
+            (inventory lượng tồn kho)
+            -const product = (state = (state chứa data product), action) =>{
+            swithch(action.type){
+                default : return [...state]
+                }
+            }
+            export default product;
+    +constants
+        +ActionTypes.js
+            +Message.js (chứa các câu thông báo)
+            - export const (tên mess) = 'câu mess';
+
+            +actions
+            +containers
+
+        tại index.js của app
+            -import { createStores } from 'redux';
+            -import appReducers from '...';
+            -import { Provider } from 'react-redux';
+
+    -tạo store
+        const  createStores (
+            appReducers
+
+            );
+        ReactDom.render(
+            <Provider store = store >
+                <App />
+            </Provider>
+            document.getElementById('root')
+        );

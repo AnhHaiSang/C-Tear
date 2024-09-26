@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.h1, h1 {
+  font-size: 30px;
+  text-align: center !important;
+  margin-top: 100px;
+}
+.h4, h4 {
+  font-size: 20px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.header {
+  text-align: center;
+}
+
+img.slide_items {
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #fff;
+  margin-left: 25%;
+}
+
+.clr{
+  clear: both;
+}
+.background_product{
+  background-image: url(./Image_Rudu/wine-1.jpg);
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  width: 70%;
+  margin: 0 auto;
+  display: block !important;
+}
+.img_card {
+  width: 50%;
+  float: left;
+ 
+}
+.content_card {
+  width: 49%;
+  float: left;
+}
+img.img_pro1 {
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.LineNewProduct {
+  text-align: center;
+}
+.lists_item1 {
+  width: 70%;
+  margin: 0 auto;
+}
+ul.d-flex.flex-wrap {
+  padding: 0;
+}
+.flex-wrap {
+  
+  flex-wrap: wrap!important;
+}
+.d-flex {
+ 
+  display: flex!important;
+}
+li.list-group-item {
+  width: 19%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2px 2px;
+}
+img.img_items {
+  width: 90%;
+  height: 180.38px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.content_items {
+  margin-top: 15px;
+  line-height: 20px;
+}
+.ImageProduct {
+  width: 100%; 
+}
+img.Image {
+  width: 25%;
+}
+
+footer.foooter_content {
+  width: 80%;
+  margin: 0% auto;
+  display: flex!important;
+  flex-wrap: wrap!important;
+}
+.lists_footer {
+  width: 20%;
+  text-align: left;
+  line-height: 20px;
+}
+.sent_email.lists_footer {
+  width: 38%;
+}
+span.input-group-text {
+  padding: 3px;
+}
+.contact_us {
+  margin-left: 20px;
+}
+.content_footer {
+  font-size: 14px;
+  color: #c9c9c9;
+}
+.checked {
+  color: orange;
+}
+.review{
+  list-style-type: none;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
